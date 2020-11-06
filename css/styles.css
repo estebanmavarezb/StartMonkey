@@ -692,3 +692,39 @@ i {
     }
 
   }
+
+  /* FIFTH SECTION */
+
+  .fifth-section .container {
+    background-image: url(../img/bg-yellow.png);
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lamp-icon {
+      padding: 5rem;
+      display: flex;
+      justify-content: center;
+  }
+
+  .lamp-icon img {
+      width: 50%;
+  }
+  
+  .fifth-headline {
+      text-align: center;
+  }
+  .fifth-headline h2 {
+      font-size: 5rem;
+  }
+
+  .fifth-headline h2 span {
+      font-size: 4rem;
+
+  }
