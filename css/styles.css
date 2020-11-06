@@ -15,7 +15,7 @@ img {
 
 header {
     background-color: #fff100;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem 2rem 1rem;
 }
 .nav-bar {
     
@@ -34,9 +34,9 @@ header {
 
 
 .nav-bar ul {
-    display: flex;
     list-style: none;
-    padding: 0;
+    padding: 0 0 1rem 0;
+    margin: 0 auto;
 }
 
 .nav-bar ul li {
@@ -59,6 +59,14 @@ i {
     color: #4a4e53;
 }
 
+.nav-list {
+    display: flex;
+    visibility: hidden;
+}
+
+.nav-list_active{
+    visibility: visible;
+}
 
 .img-nav {
     display: flex;
@@ -99,6 +107,9 @@ i {
         list-style: none;
         text-align: center;
         align-items: center;
+    }
+    .nav-list{
+        visibility: visible;
     }
     
     .nav-bar ul li {
