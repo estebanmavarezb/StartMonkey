@@ -1,0 +1,658 @@
+html {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size:  62.5%; /** 1rem = 10px */
+    margin: 0;
+}
+
+*, *::before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #fff100;
+    padding: 2rem 1rem;
+}
+.nav-bar {
+    
+    /* position: absolute;
+    left: -2px;
+    top: -1px; */
+    width: 100%;
+    height: 140px;
+    z-index: 131;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    margin-right: 1rem;
+}
+.nav-bar ul li:last-of-type {
+    margin-right: 0;
+}
+
+
+.nav-bar a,
+i {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-bar i {
+    color: #4a4e53;
+}
+
+
+.img-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.logo {
+    flex: 0 0 calc(80% - 1rem);
+}
+
+.bars {
+    flex: 0 0 calc(15% - 1rem);
+}
+
+.bars i {
+    font-size: 4rem;
+}
+@media (min-width: 768px) {
+
+    .nav-bar {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .nav-bar i {
+        font-size: 2.5rem;
+    }
+
+    .nav-bar ul {
+        flex-direction: row;
+        list-style: none;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .nav-bar ul li {
+        margin-right: 3rem;
+    }
+    
+    .nav-bar ul li:last-of-type {
+        margin-right: 0;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .home {
+        display: none;
+    }
+}
+
+/* grilla */
+
+
+.fondo {
+    position: absolute;
+    height: 235vh;
+}
+
+.grilla {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: .5rem;
+    height: 220vh;
+}
+ 
+.mono {
+    width: 60%;
+    position: absolute;
+    top: 62%;
+    right: 3%;
+}
+
+.rectangulo {
+    width: 55%;
+    position: absolute;
+    top: 87%;
+    left: 6%;
+    z-index: 100;
+    
+}
+
+
+.imagen-grilla-3,
+.imagen-grilla-4,
+.imagen-grilla-5,
+.imagen-grilla-7 {
+    display: none;
+}
+
+.imagen-grilla-9,
+.imagen-grilla-10,
+.imagen-grilla-11 {
+    display: none;
+}
+
+.imagen-grilla-13,
+.imagen-grilla-15,
+.imagen-grilla-16,
+.imagen-grilla-17 {
+    display: none;
+}
+
+.imagen-grilla-6 {
+    background-image: url(../img/miniature.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-row: 2;
+}
+
+
+.imagen-grilla-8 {
+    background-image: url(../img/happyhedgehog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-row: 3;
+    
+}
+
+.imagen-grilla-12 {
+    background-image: url(../img/card1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-row: 4;
+   
+}
+
+.imagen-grilla-14 {
+    background-image: url(../img/512x512.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-row: 5;
+    height: 100%;
+}
+
+@media (min-width: 900px) {
+    
+    .grillas {
+        margin-top: 11rem ;
+    }
+    
+    .fondo {
+        position: absolute;
+        height: 240vh;
+    }
+
+.grilla {
+    width: 98%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: .8rem;
+    height: 220vh;
+}
+
+.mono {
+    position: absolute;
+    right: 36rem;
+    top: 88rem;
+    width: 24%;
+    z-index: 2
+}
+
+.rectangulo {
+    width: 112%;
+    position: relative;
+    left: 0;
+    top: 9%;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    z-index: 1
+}
+
+ .imagen-grilla-3 {
+    background-image: url(../img/osos2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    display: block;
+    position: relative;
+    top: -32%;
+}
+
+.imagen-grilla-4 {
+    display: block;
+    background-image: url(../img/miniature.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 3;
+    grid-row: 3 / 1;
+    height: 65%;
+    align-self: end;
+}
+
+.imagen-grilla-5 {
+    display: block;
+    background-image: url(../img/osos.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.imagen-grilla-6 {
+    background-image: url(../img/miniature.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.imagen-grilla-7 {
+    display: block;
+    background-image: url(../img/paleta-payaso.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 4;
+    grid-row: 4 / 2;
+    height: 65%;
+    align-self: end;
+}
+
+
+.imagen-grilla-8 {
+    background-image: url(../img/happyhedgehog.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.imagen-grilla-9 {
+    display: block;
+    background-image: url(../img/juegos.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.imagen-grilla-10 {
+    display: block;
+    background-image: url(../img/nutri.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.imagen-grilla-11 {
+    display: block;
+    background-image: url(../img/bob-min.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 4;
+    grid-row: 6 / 4;
+}
+
+.imagen-grilla-12 {
+    background-image: url(../img/card1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 2 / 4;
+    grid-row: 6 / 4;
+}
+
+.imagen-grilla-13 {
+    display: block;
+    background-image: url(../img/Little-Animals_01-SPLASH.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.imagen-grilla-14 {
+    background-image: url(../img/512x512.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 4;
+    grid-row: 6 / 7;
+}
+
+.imagen-grilla-15 {
+    display: block;
+    background-image: url(../img/telHeroe-min.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 3;
+    grid-row: 6 / 7;
+}
+
+.imagen-grilla-16 {
+    display: block;
+    background-image: url(../img/imagextPirat-copia-4.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 2;
+    grid-row: 6 / 7;
+}
+
+.imagen-grilla-17 {
+    display: block;
+    background-image: url(../img/miniatura14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-row-start: 7;
+    grid-row-end: 5;
+}
+}
+
+/* CAROUSEL STYLE */
+  
+  .gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    counter-increment: gallery-cell;
+  }
+  
+  .gallery-cell img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* big buttons, no circle */
+  .flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+    background: transparent !important;
+  }
+  /* arrow color */
+  .flickity-prev-next-button .arrow {
+    fill: white !important;
+  }
+  .flickity-prev-next-button.no-svg {
+    color: white !important;
+  }
+  .flickity-prev-next-button:hover {
+    background: transparent;
+  }
+  /* hide disabled button */
+  .flickity-prev-next-button:disabled {
+    display: none;
+  }
+  
+  /* position dots in gallery */
+  .flickity-page-dots {
+    bottom: 50px !important;
+  }
+  /* white circles */
+  .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1 !important;
+    background: transparent !important;
+    border: 2px solid white;
+  }
+  /* fill-in selected dot */
+  .flickity-page-dots .dot.is-selected {
+    background: white !important;
+  }
+  
+  /* third section */
+
+  .third-section {
+      background-color: transparent;
+      display: flex;
+      
+  }
+
+  .yellow-container {
+      background-image: url(../img/yellow-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: unset;
+      width: 100%;
+      display: flex;
+    flex-direction: row;
+    height: 100vh;
+   
+  }
+
+ /* third section */
+
+  .third-section {
+      background-color: #fff;
+      display: flex;
+  }
+
+  .yellow-container {
+      background-image: url(../img/yellow-bg.png);
+      background-repeat: no-repeat;
+      background-size: 111% 110%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      overflow: hidden;
+  }
+
+  .first-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 15%;
+      padding-left: 16%;
+  }
+
+  .first-row .text {
+      display: flex;
+      flex-direction: column;
+      padding: 10rem 0rem 10rem 8rem;
+      width: 45%;
+      max-width: 40%;
+
+  }
+
+  .text h3 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin: 0;
+  }
+
+  .text h5 {
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 1.5rem 0;
+  }
+
+  .text p {
+    font-size: 1.3rem;
+    width: 70%;
+  }
+
+  .first-row .img {
+      width: 55%;
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  .first-row img {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: -4rem;
+    bottom: -2.5rem;
+  }
+
+  .second-row {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      padding: 8% 16%;
+  }
+
+  .second-row .icon-card {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      padding-right: 4rem;
+  }
+
+  .icon-card .circle {
+      height: 100px;
+      width: 100px;
+      background-color: #353945;
+      border-radius: 50%;
+  }
+
+  .circle img {
+      width: 60%;
+      position: relative;
+      top: 20%;
+      left: 20%;
+  }
+
+  .icon-card .icon-text {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    max-width: 80%;
+  }
+
+  @media (max-width: 900px) {
+    
+    .first-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15%;
+    padding-left: 12%;
+    text-align: center;
+    }
+
+    .first-row .text {
+        display: flex;
+        flex-direction: column;
+        padding: 10rem 0rem 10rem 8rem;
+        width: 85%;
+        max-width: 84%;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .text h3 {
+        font-size: 6.5rem;
+        font-weight: 600;
+        margin: 0;
+    }    
+
+    .text h5 {
+        font-size: 3.6rem;
+    }
+
+    .text p {
+        font-size: 2.3rem;
+        width: 100%;
+    }
+
+    .first-row .img {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .first-row img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .second-row {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 8% 16%;
+    }
+
+    .second-row .icon-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .icon-card .circle {
+    height: 200px;
+    width: 200px;
+    }
+
+    .icon-card .icon-text {
+        font-size: 2.3rem;
+    }
+
+  }
