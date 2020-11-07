@@ -2,7 +2,8 @@
 const dom = {
     bars: '.bars',
     navList: '.nav-list',
-    menuClose: '.bars.close'
+    menuClose: '.bars.close',
+    navListActive: 'nav-list_active'
 }
 
 //Function that returns a querySelector
@@ -16,14 +17,14 @@ window.onload = () => {
 
     //Event to open the menu
     bars.onclick = () => {
-        navList.classList.toggle('nav-list_active');
+        navList.classList.toggle(dom.navListActive);
         bars.style.display = 'none';
         menuClose.style.display ='block';
     }
 
     //Event to close the menu
     menuClose.onclick = () => {
-        navList.classList.toggle('nav-list_active');
+        navList.classList.toggle(dom.navListActive);
         menuClose.style.display = 'none';
         bars.style.display ='block';
     }
