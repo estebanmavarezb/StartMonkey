@@ -97,7 +97,9 @@ i {
 .nav-list_active{
     visibility: visible;
 }
-
+.close{
+    display: none;
+}
 .img-nav {
     display: flex;
     justify-content: space-between;
