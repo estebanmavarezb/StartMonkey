@@ -1054,7 +1054,7 @@ i {
     background-image: url(../img/bg-frase-2.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 150vh;
+    height: 140vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1086,3 +1086,168 @@ i {
       top: -8rem;
   }
   
+  .form-section h2 {
+    padding-top: 15rem;
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: #353945;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+  }
+
+  .lines {
+    z-index: -1;
+    height: 90%;
+    position: absolute;
+    width: 93%;
+    right: 0;
+    bottom: -15%;
+  }
+
+  .form-container .info {
+      background-color: #eeeeee;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      border-radius: 26px;
+      padding: 2rem;
+      margin: 2rem;
+      height: 50%;
+  }
+
+  .form-container .info h3 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #353945;
+}
+
+.form-container .info p {
+    font-size: 1.5rem;
+}
+
+.form-container .info-socialicons {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+
+.icon-border:first-of-type {
+    margin-right: 2rem;
+}
+
+.icon-border {
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 25px;
+    margin: 2px;
+    padding: 2px;
+}
+
+form {
+  width: 60%;  
+  position: relative;
+  top: -40px;
+  padding-left: 3rem;
+}
+
+form fieldset {
+    border: none;
+    border-radius: 18px;
+    background-color: #eeeeee;
+    height: 35px;
+    margin-top: 3rem;
+}
+
+fieldset input {
+    border: none;
+    background-color: transparent;
+    padding: 9px;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+fieldset input:focus{
+    outline-style: none;
+}
+
+.textarea {
+    height: 40%;
+}
+
+textarea {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+textarea:focus{
+    outline-style: none;
+}
+
+.button {
+    background-color: transparent;
+    text-align: end;
+}
+
+button {
+    width: 60%;
+    background-color: #353945;
+    color: #dacf32;
+    height: 35px;
+    border: none;
+    border-radius: 18px;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 1024px){
+
+    
+    .form-section {
+        top: -57rem;
+    }
+
+    .form-section h2 {
+        padding-top: 0;
+    }
+
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+    }
+
+    .form-container .info {
+        order: 2;
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .button {
+        text-align: left;
+    }
+}
+
+@media (min-width: 2450px) {
+    .form-section {
+        top: -16rem;
+    }
+
+    .lines {
+        height: 95%;
+        width: 82%;
+        bottom: -20%;
+    }
+}
+
