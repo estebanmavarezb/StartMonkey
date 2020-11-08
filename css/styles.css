@@ -980,7 +980,7 @@ i {
       text-align: center;
       display: flex;
       flex-direction: column;
-      max-width: 40%;
+      width: 40%;
       border-radius: 26px;
       padding: 2rem;
       margin: 2rem;
@@ -1073,3 +1073,48 @@ button {
     border-radius: 18px;
     font-size: 2.5rem;
 }
+
+@media (max-width: 1024px){
+
+    
+    .form-section {
+        top: -57rem;
+    }
+
+    .form-section h2 {
+        padding-top: 0;
+    }
+
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+    }
+
+    .form-container .info {
+        order: 2;
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .button {
+        text-align: left;
+    }
+}
+
+@media (min-width: 2450px) {
+    .form-section {
+        top: -16rem;
+    }
+
+    .lines {
+        height: 95%;
+        width: 82%;
+        bottom: -20%;
+    }
+}
+
