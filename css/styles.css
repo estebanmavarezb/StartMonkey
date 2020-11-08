@@ -623,9 +623,13 @@ i {
   }
 
   .icon-card .icon-text {
-    font-size: 1.3rem;
+    
     margin-top: 2rem;
     max-width: 80%;
+  }
+
+  .icon-card .icon-text p {
+    font-size: 1.3rem;
   }
 
   @media (max-width: 900px) {
@@ -697,8 +701,9 @@ i {
     width: 200px;
     }
 
-    .icon-card .icon-text {
+    .icon-card .icon-text p {
         font-size: 2.3rem;
+        text-align: center;
     }
 
   }
