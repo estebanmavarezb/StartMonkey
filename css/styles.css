@@ -963,6 +963,16 @@ i {
   .form-container {
     display: flex;
     flex-direction: row;
+    z-index: 3;
+  }
+
+  .lines {
+    z-index: -1;
+    height: 90%;
+    position: absolute;
+    width: 93%;
+    right: 0;
+    bottom: -15%;
   }
 
   .form-container .info {
@@ -1009,6 +1019,7 @@ form {
   width: 60%;  
   position: relative;
   top: -40px;
+  padding-left: 3rem;
 }
 
 form fieldset {
