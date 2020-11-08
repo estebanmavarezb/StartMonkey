@@ -887,3 +887,21 @@ i {
       justify-content: center;
       align-items: center;
   }
+
+  /* FORM SECTION */
+
+  .form-section {
+      background-image: url(../img/contact-bg.png);
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      position: relative;
+      top: -8rem;
+  }
+  
