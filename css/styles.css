@@ -843,7 +843,7 @@ i {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    top: -10rem;
+    top: -6rem;
     z-index: 4;
     height: 150vh;
     display: flex;
@@ -852,16 +852,19 @@ i {
     justify-content: center;
   }
 
-  .row-creative {
+  .contenido-creative {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       flex-wrap: nowrap;
+      margin-top: 25rem;
     }
 
     .puzzle-b-p {
         position: relative;
-        top: 7rem;
-        right: 15rem;
+        top:39rem;
+        right: 10rem;
         height: 0;
         display: flex;
         flex-direction: column;
@@ -870,7 +873,7 @@ i {
     }
 
     .puzzle-b-p img {
-        margin-bottom: 45.5rem;
+        margin-bottom: 53.5rem;
     }
 
     .puzzle-b-p img:last-of-type {
@@ -893,16 +896,8 @@ i {
         position: relative;
         width: 0;
         height: auto;
-        left: 0rem;
-    }
-
-    @media (min-width: 400px) {
-        .puzzle-y {
-            width: 0;
-            height: 0;
-            left: 3rem;
-            bottom: 15rem;
-        }
+        left: -2rem;
+        bottom: 14rem;
     }
 
     .puzzle-y img {
@@ -934,16 +929,84 @@ i {
     z-index: 100;
 }
 
-  @media (min-width: 900px) {
+ 
+
+  
+  @media (min-width: 400px) {
+      .creative {
+          justify-content: unset;
+        height: 100vh;
+        background-position: unset;
+      }
+    .contenido-creative {
+        margin-top: 5rem;
+    } 
+    .puzzle-y {
+        width: 0;
+        height: 0;
+        left: 1rem;
+        bottom: 15rem;
+    }
+
+    .puzzle-b-p {
+        position: relative;
+        top: 25.8rem;
+        right: 9.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-right: 5rem; */
+        flex: 0 0 calc(30% - 1rem);
+        z-index: 1;
+    }
+
+    .puzzle-b-p img {
+        margin-bottom: 31.5rem;
+    }
+}
+
+@media (min-width: 708px) {
+
+    .creative {
+        background-size: cover;
+        background-position: unset;
+        height: 100vh;
+    }
+
+    .puzzle-y {
+        width: 0;
+        height: 0;
+        left: 20.5rem;
+        bottom: 48rem;
+    }
+
+    .puzzle-b-p {
+        position: relative;
+        top: 32.8rem;
+        right: 20.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-right: 5rem; */
+        flex: 0 0 calc(30% - 1rem);
+        z-index: 1;
+    }
+
+    .puzzle-b-p img {
+        margin-bottom: 54.5rem;
+    }
+}
+
+@media (min-width: 900px) {
     .creative {
         background-size: cover;
         background-position: unset;
         height: 100vh;
       }
 
-    .row-creative {
+    .contenido-creative {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
@@ -1003,44 +1066,57 @@ i {
   }
 
   @media (min-width: 1000px) {
+    .creative {
+        top: -9rem;
+        height: 100vh;
+    }
+
     .puzzle-y {
-        left: -8rem;
-        bottom: 25.2rem;
-        justify-content: center;
-        margin: 0;
+        width: 0;
+        height: 0;
+        left: 44.5rem;
+        bottom: 62rem;
     }
 
     .puzzle-b-p {
         position: relative;
-        top: 22.5rem;
+        top: 45.8rem;
         right: 35.7rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 5rem;
+        /* margin-right: 5rem; */
         flex: 0 0 calc(30% - 1rem);
         z-index: 1;
+    }
+
+    .puzzle-b-p img {
+        margin-bottom: 80.5rem;
     }
   }
   
   @media (min-width: 1200px) {
     .puzzle-y {
-        left: -8rem;
-        bottom: 24.2rem;
+        left: 50rem;
+        bottom: 26rem;
         justify-content: center;
         margin: 0;
     }
 
     .puzzle-b-p {
         position: relative;
-        top: 22rem;
-        right: 35.7rem;
+        top: 24.3rem;
+    right: 35.7rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-right: 5rem;
         flex: 0 0 calc(30% - 1rem);
         z-index: 1;
+    }
+
+    .puzzle-b-p img {
+        margin-bottom: 20rem;
     }
   }
 
