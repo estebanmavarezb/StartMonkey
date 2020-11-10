@@ -21,7 +21,7 @@ const dom = {
 const sE = elem => document.querySelector(elem);
 
 //Function that returns a ScrollReveal object
-const scroll = elem => ScrollReveal().reveal(elem);
+const Scroll = elem => ScrollReveal().reveal(elem);
 
 window.onload = () => {
 
@@ -44,30 +44,30 @@ window.onload = () => {
     }
 
         //ScrollReveal
-        scroll(dom.monkey);
-        scroll(dom.imgGrid(3));
-        scroll(dom.imgGrid(4), {delay: 50});
-        scroll(dom.imgGrid(5), {delay: 100});
-        scroll(dom.imgGrid(6), {delay: 150});
-        scroll(dom.imgGrid(7), {delay: 200});
-        scroll(dom.imgGrid(8), {delay: 250});
-        scroll(dom.imgGrid(9), {delay: 300});
-        scroll(dom.imgGrid(10), {delay: 350});
-        scroll(dom.imgGrid(11), {delay: 400});
-        scroll(dom.imgGrid(12), {delay: 410});
-        scroll(dom.imgGrid(13), {delay: 420});
-        scroll(dom.imgGrid(14), {delay: 430});
-        scroll(dom.imgGrid(15), {delay: 440});
-        scroll(dom.imgGrid(16), {delay: 450});
-        scroll(dom.imgGrid(17), {delay: 460});
-        scroll(dom.banana, {delay: 400});
-        scroll(dom.cel, {delay: 400});
-        scroll(dom.lamp, {delay: 400});
-        scroll(dom.world, {delay: 400});
-        scroll(dom.statistics, {delay: 400});
-        scroll(dom.lampIcon, {delay: 400});
-        scroll(dom.pink, {delay: 400});
-        scroll(dom.blue, {delay: 400});
-        scroll(dom.yellow, {delay: 400});
+        Scroll(dom.monkey);
+        Scroll(dom.imgGrid(3));
+        Scroll(dom.imgGrid(4), {delay: 50});
+        Scroll(dom.imgGrid(5), {delay: 100});
+        Scroll(dom.imgGrid(6), {delay: 150});
+        Scroll(dom.imgGrid(7), {delay: 200});
+        Scroll(dom.imgGrid(8), {delay: 250});
+        Scroll(dom.imgGrid(9), {delay: 300});
+        Scroll(dom.imgGrid(10), {delay: 350});
+        Scroll(dom.imgGrid(11), {delay: 400});
+        Scroll(dom.imgGrid(12), {delay: 410});
+        Scroll(dom.imgGrid(13), {delay: 420});
+        Scroll(dom.imgGrid(14), {delay: 430});
+        Scroll(dom.imgGrid(15), {delay: 440});
+        Scroll(dom.imgGrid(16), {delay: 450});
+        Scroll(dom.imgGrid(17), {delay: 460});
+        Scroll(dom.banana, {delay: 400});
+        Scroll(dom.cel, {delay: 400});
+        Scroll(dom.lamp, {delay: 400});
+        Scroll(dom.world, {delay: 400});
+        Scroll(dom.statistics, {delay: 400});
+        Scroll(dom.lampIcon, {delay: 400});
+        Scroll(dom.pink, {delay: 400});
+        Scroll(dom.blue, {delay: 400});
+        Scroll(dom.yellow, {delay: 400});
 
 }
