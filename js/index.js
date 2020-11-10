@@ -21,7 +21,7 @@ const dom = {
 const sE = elem => document.querySelector(elem);
 
 //Function that returns a ScrollReveal object
-const Scroll = elem => ScrollReveal().reveal(elem);
+const Scroll = (elem, time = 0) => ScrollReveal().reveal(elem, {delay: time});
 
 window.onload = () => {
 
@@ -46,28 +46,28 @@ window.onload = () => {
         //ScrollReveal
         Scroll(dom.monkey);
         Scroll(dom.imgGrid(3));
-        Scroll(dom.imgGrid(4), {delay: 50});
-        Scroll(dom.imgGrid(5), {delay: 100});
-        Scroll(dom.imgGrid(6), {delay: 150});
-        Scroll(dom.imgGrid(7), {delay: 200});
-        Scroll(dom.imgGrid(8), {delay: 250});
-        Scroll(dom.imgGrid(9), {delay: 300});
-        Scroll(dom.imgGrid(10), {delay: 350});
-        Scroll(dom.imgGrid(11), {delay: 400});
-        Scroll(dom.imgGrid(12), {delay: 410});
-        Scroll(dom.imgGrid(13), {delay: 420});
-        Scroll(dom.imgGrid(14), {delay: 430});
-        Scroll(dom.imgGrid(15), {delay: 440});
-        Scroll(dom.imgGrid(16), {delay: 450});
-        Scroll(dom.imgGrid(17), {delay: 460});
-        Scroll(dom.banana, {delay: 400});
-        Scroll(dom.cel, {delay: 400});
-        Scroll(dom.lamp, {delay: 400});
-        Scroll(dom.world, {delay: 400});
-        Scroll(dom.statistics, {delay: 400});
-        Scroll(dom.lampIcon, {delay: 400});
-        Scroll(dom.pink, {delay: 400});
-        Scroll(dom.blue, {delay: 400});
-        Scroll(dom.yellow, {delay: 400});
+        Scroll(dom.imgGrid(4), 50);
+        Scroll(dom.imgGrid(5), 100);
+        Scroll(dom.imgGrid(6), 150);
+        Scroll(dom.imgGrid(7), 200);
+        Scroll(dom.imgGrid(8), 250);
+        Scroll(dom.imgGrid(9), 300);
+        Scroll(dom.imgGrid(10), 350);
+        Scroll(dom.imgGrid(11), 400);
+        Scroll(dom.imgGrid(12), 410);
+        Scroll(dom.imgGrid(13), 420);
+        Scroll(dom.imgGrid(14), 430);
+        Scroll(dom.imgGrid(15), 440);
+        Scroll(dom.imgGrid(16), 450);
+        Scroll(dom.imgGrid(17), 460);
+        Scroll(dom.banana, 400);
+        Scroll(dom.cel, 400);
+        Scroll(dom.lamp, 400);
+        Scroll(dom.world, 400);
+        Scroll(dom.statistics, 400);
+        Scroll(dom.lampIcon, 400);
+        Scroll(dom.pink, 400);
+        Scroll(dom.blue, 400);
+        Scroll(dom.yellow, 400);
 
 }
