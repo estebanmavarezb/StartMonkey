@@ -229,8 +229,10 @@ i {
 }
 
 .grilla > *:nth-child(1) {
+    grid-row:1;
+    grid-column:2;
     -ms-grid-row: 1;
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
 }
 
 .grilla > *:nth-child(2) {
