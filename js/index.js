@@ -17,6 +17,13 @@ const dom = {
     yellow: '.puzzle-y'
 }
 
+//Object that contains style properties from css
+const styles = {
+    none(elem){ return elem.style.display = 'none' },
+    block(elem){ return elem.style.display = 'block' },
+    toggle(elem, className){ return elem.classList.toggle(className) }
+}
+
 //Function that returns a querySelector
 const sE = elem => document.querySelector(elem);
 
@@ -31,16 +38,16 @@ window.onload = () => {
 
     //Event to open the menu
     bars.onclick = () => {
-        navList.classList.toggle(dom.navListActive);
-        bars.style.display = 'none';
-        menuClose.style.display ='block';
+        
+        styles.none(bars);
+        styles.block(menuClose);
     }
 
     //Event to close the menu
     menuClose.onclick = () => {
-        navList.classList.toggle(dom.navListActive);
-        menuClose.style.display = 'none';
-        bars.style.display ='block';
+        styles.toggle(navList, dom.navListActive);
+        styles.none(menuClose);
+        styles.block(bars);
     }
 
         //ScrollReveal
