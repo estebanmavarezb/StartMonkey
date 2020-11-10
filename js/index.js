@@ -21,7 +21,7 @@ const dom = {
 const styles = {
     none(elem){ return elem.style.display = 'none' },
     block(elem){ return elem.style.display = 'block' },
-    toggle(elem, className){ return elem.classList.toggle(className) }
+    toggle(elem, className){ return elem.classList.toggle(className) },
 }
 
 //Function that returns a querySelector
@@ -38,7 +38,7 @@ window.onload = () => {
 
     //Event to open the menu
     bars.onclick = () => {
-        
+        styles.toggle(navList, dom.navListActive);
         styles.none(bars);
         styles.block(menuClose);
     }
