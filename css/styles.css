@@ -706,10 +706,10 @@ i {
   
   .gallery-cell {
     width: 100%;
-    height: auto;
+    height: 100vh;
+    display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1169,14 +1169,14 @@ i {
   }
 
   .lamp-icon {
-      padding: 5rem;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-justify-content: center;
+    padding: 5rem;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
   }
 
   .lamp-icon img {
