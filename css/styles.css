@@ -238,7 +238,7 @@ i {
 
 .grilla > *:nth-child(1) {
     grid-row:1;
-    grid-column:2;
+    grid-column:1;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
 }
@@ -264,18 +264,17 @@ i {
 }
  
 .mono {
-    width: 60%;
+    width: 22rem;
     position: absolute;
-    top: 62%;
+    top: 61%;
     right: 3%;
 }
 
 .rectangulo {
-    width: 55%;
+    width: 25rem;
     position: absolute;
-    top: 87%;
-    left: 6%;
-    z-index: 100;
+    top: 13rem;
+    z-index: 99;
     
 }
 
@@ -365,8 +364,10 @@ i {
 }
 
 .grilla > *:nth-child(1) {
+    grid-row: 1;
+    grid-column: 2;
         -ms-grid-row: 1;
-        -ms-grid-column: 1;
+        -ms-grid-column: 2;
 }
 
 .grilla > *:nth-child(2) {
@@ -493,14 +494,11 @@ i {
 }
 
 .rectangulo {
-    width: 112%;
+    width: 40rem;
+    height: 21.2rem;
     position: relative;
     left: 0;
-    top: 9%;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
+    top: 1rem;
     z-index: 1
 }
 
