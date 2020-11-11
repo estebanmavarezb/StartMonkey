@@ -10,6 +10,7 @@ html {
     -webkit-box-sizing: border-box;
     font-size:  62.5%; /** 1rem = 10px */
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 *, *::before, *:after {
@@ -17,12 +18,9 @@ html {
             box-sizing: inherit;
 }
 
-header {
-    background-color: #fff100;
-    padding: 4rem 1rem 2rem 1rem;
-}
 
-/*globales*/
+
+/*global*/
 
 img {
     width: 100%;
@@ -52,6 +50,13 @@ h3 {
 
 p {
     font-size: 2.4rem;
+}
+
+/* end global */
+
+header {
+    background-color: #fff100;
+    padding: 4rem 1rem 2rem 1rem;
 }
 
 .nav-bar {
@@ -99,13 +104,20 @@ p {
 .nav-bar a,
 i {
     font-size: 2rem;
-    color: black;
+    color: #4b4e54;
     text-decoration: none;
     cursor: pointer;
 }
 
 .nav-bar i {
     color: #4a4e53;
+}
+
+.nav-bar a:active {
+    background-color: #4a4e53;
+    color: #fff100;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
 }
 
 .nav-list {
@@ -199,10 +211,6 @@ i {
 
     .bars {
         display: none;
-    }
-
-    .home {
-        display: block;
     }
 }
 
@@ -1135,6 +1143,7 @@ i {
       z-index: 4;
     background-image: url(../img/bg-yellow.png);
     background-repeat: no-repeat;
+    background-position: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1151,6 +1160,12 @@ i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+      .fifth-section .container {
+          background-position: unset;
+      }
   }
 
   .lamp-icon {
@@ -1190,7 +1205,7 @@ i {
     background-position: center;
     top: -10rem;
     z-index: 4;
-    height: 150vh;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1220,8 +1235,8 @@ i {
 
     .puzzle-b-p {
         position: relative;
-        top: 7rem;
-        right: 15rem;
+        top: 16rem;
+        right: 10rem;
         height: 0;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1239,7 +1254,7 @@ i {
     }
 
     .puzzle-b-p img {
-        margin-bottom: 45.5rem;
+        margin-bottom: 36.5rem;
     }
 
     .puzzle-b-p img:last-of-type {
@@ -1270,7 +1285,7 @@ i {
                 align-items: unset;
         position: relative;
         width: 0;
-        height: auto;
+        height: 0;
         left: 0rem;
     }
 
@@ -1284,7 +1299,7 @@ i {
     }
 
     .puzzle-y img {
-        width: 18rem;
+        width: 10rem;
     }
 
 
@@ -1321,7 +1336,7 @@ i {
     z-index: 100;
 }
 
-  @media (min-width: 900px) {
+  @media (min-width: 768px) {
     .creative {
         background-size: cover;
         background-position: unset;
@@ -1349,7 +1364,7 @@ i {
       .puzzle-b-p {
         position: relative;
         top: 22.2rem;
-        right: 30.5rem;
+        right: 25.5rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1367,7 +1382,7 @@ i {
       }
   
       .puzzle-b-p img {
-          margin-bottom: 22.5rem;
+          margin-bottom: 47.5rem;
       }
   
       .puzzle-b-p img:last-of-type {
@@ -1385,8 +1400,8 @@ i {
       .puzzle-y {
         max-width: 1200px;
         width: 100%;
-        left: -8rem;
-        bottom: 25.8rem;
+        left: -5rem;
+    bottom: 57.8rem;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -1405,6 +1420,10 @@ i {
                 flex: 0 0 calc(30% - 1rem);
         z-index: 1;
       }
+
+      .puzzle-y img {
+        width: 15rem;
+    }
   
   
     .texto-creative {
@@ -1489,6 +1508,10 @@ i {
                 flex: 0 0 calc(30% - 1rem);
         z-index: 1;
     }
+
+    .puzzle-b-p img {
+        margin-bottom: 24.5rem;
+    }
   }
 
  
@@ -1501,7 +1524,8 @@ i {
     background-image: url(../img/bg-frase-2.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 140vh;
+    background-position: center center;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1532,6 +1556,12 @@ i {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+  }
+
+  @media (min-width: 768px) {
+      .creative-person {
+        background-position: unset;
+      }
   }
 
   /* FORM SECTION */
@@ -1703,7 +1733,7 @@ button {
 
     
     .form-section {
-        top: -57rem;
+        top: -19rem;
     }
 
     .form-section h2 {
@@ -1749,3 +1779,97 @@ button {
         bottom: -20%;
     }
 }
+
+/* FOOTER */
+
+footer {
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.img-footer img {
+    width: 15rem;
+}
+
+.img-footer {
+    flex: 0 0 calc(45% - 1rem);
+}
+
+.img-footer::after {
+    position: absolute;
+    content: '';
+    width: .1rem;
+    height: 6.5rem;
+    background-color: white;
+    margin: 0 1.5rem;
+}
+
+.nav-footer.contenedor {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.nav-footer ul {
+    display: flex;
+    list-style: none;
+    padding: 0 0rem 0 0;
+    flex: 0 0 calc(45% - 1rem);
+    margin-left: 2.5rem;
+}
+
+.nav-footer ul li {
+    margin-right: 1rem;
+}
+.nav-footer ul li:last-of-type {
+    margin-right: 0;
+}
+
+.nav-footer a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+@media (min-width: 900px) {
+    .img-footer img {
+        width: 35rem;
+    }
+    .img-footer::after {
+        height: 15rem;
+    }
+
+    footer {
+        height: 90vh;
+    }
+
+    .nav-footer a  {
+        font-size: 2rem;
+    }
+
+    .nav-footer ul{
+        padding: 0;
+        margin-right: 5rem;
+    }
+
+    .nav-footer.contenedor {
+        width: 50%;
+    }
+}
+
+
