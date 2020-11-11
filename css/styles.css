@@ -718,11 +718,18 @@ i {
 
   .gallery-cell {
     width: 100%;
+<<<<<<< HEAD
     height: auto;
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
     justify-content: center;
+=======
+    height: 100vh;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+>>>>>>> 5726a36ed2257c267545b1e3a95ef80ace2a5031
     -webkit-box-pack: center;
     -ms-flex-pack: center;     
         -ms-flex-pack: center;
@@ -1195,6 +1202,7 @@ i {
   }
 
   .lamp-icon {
+<<<<<<< HEAD
       padding: 5rem;
       display: flex;
       display: -webkit-box;
@@ -1204,6 +1212,18 @@ i {
           -ms-flex-pack: center;
       -webkit-justify-content: center;
       text-align: center;
+=======
+    padding: 5rem;
+    position: relative;
+    left: 7rem;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+>>>>>>> 5726a36ed2257c267545b1e3a95ef80ace2a5031
   }
 
   .lamp-icon img {
