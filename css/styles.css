@@ -221,7 +221,7 @@ i {
 
 .fondo {
     position: absolute;
-    height: 235vh;
+    height: 165vh;
 }
 
 .grilla {
@@ -235,7 +235,7 @@ i {
     -ms-grid-rows: 1fr .5rem 1fr .5rem 1fr .5rem 1fr .5rem 1fr;
     grid-template-rows: repeat(5, 1fr);
     grid-gap: .5rem;
-    height: 220vh;
+    height: 150vh;
 }
 
 .grilla > *:nth-child(1) {
@@ -268,14 +268,15 @@ i {
 .mono {
     width: 22rem;
     position: absolute;
-    top: 61%;
+    top: 41rem;
     right: 3%;
 }
 
 .rectangulo {
-    width: 25rem;
+    width: 35rem;
+    height: 21rem;
     position: absolute;
-    top: 13rem;
+    top: 0rem;
     z-index: 99;
     
 }
@@ -1202,7 +1203,6 @@ i {
   }
 
   .lamp-icon {
-<<<<<<< HEAD
       padding: 5rem;
       display: flex;
       display: -webkit-box;
@@ -1212,19 +1212,7 @@ i {
           -ms-flex-pack: center;
       -webkit-justify-content: center;
       text-align: center;
-=======
-    padding: 5rem;
-    position: relative;
-    left: 7rem;
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
->>>>>>> 5726a36ed2257c267545b1e3a95ef80ace2a5031
-  }
+    }
 
   .lamp-icon img {
       width: 50%;
@@ -1611,6 +1599,12 @@ i {
       }
   }
 
+  @media (min-width: 1200px) {
+    .creative-person {
+        height: 150vh;
+    }
+  }
+
   /* FORM SECTION */
 
   .form-section {
@@ -1634,7 +1628,7 @@ i {
               justify-content: center;
       z-index: 3;
       position: relative;
-      top: -8rem;
+      top: -18rem;
   }
   
   .form-section h2 {
@@ -1776,12 +1770,8 @@ button {
     cursor: pointer;
 }
 
-@media (max-width: 1024px){
 
-    
-    .form-section {
-        top: -19rem;
-    }
+@media (max-width: 1024px){
 
     .form-section h2 {
         padding-top: 0;
@@ -1826,6 +1816,46 @@ button {
         bottom: -20%;
     }
 }
+
+@media (min-width: 375px) {
+    .form-section {
+        top: -26rem;
+    } 
+}
+
+@media (min-width: 400px) {
+    .form-section {
+        top: -24rem;
+    } 
+}
+
+@media (min-width: 768px) {
+    .form-section {
+        top: -31rem;
+    } 
+}
+
+
+@media (min-width: 1024px) {
+    .form-section {
+        top: -41rem;
+    } 
+}
+
+@media (min-width: 1200px) {
+    .form-section {
+        top: -8rem;
+    } 
+}
+
+
+@media (min-width: 1280px) {
+    .form-section {
+        top: -9rem;
+    } 
+}
+
+
 
 /* FOOTER */
 
