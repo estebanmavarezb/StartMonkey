@@ -113,6 +113,7 @@ iframe {
 
 .game-headline h2 {
     font-size: 4rem;
+    margin: 0;
 }
 
 .game-image {
@@ -152,3 +153,21 @@ iframe {
 .white {
     background-color: #fff;
 }
+
+/* CAROUSEL */
+
+/* white circles */
+.flickity-page-dots .dot {
+    background: grey !important;
+    border: 2px solid white;
+    width: 14px !important;
+    height: 14px !important;
+    border: 2px solid grey;
+  }
+  .flickity-page-dots .dot.is-selected {
+    background: white !important;
+}
+
+  .flickity-page-dots {
+    bottom: 20px !important;
+  }
