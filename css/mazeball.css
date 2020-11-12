@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 /* SECOND SECTION */
 
 .mazeball-hero {
@@ -132,7 +136,7 @@ iframe {
     background-size: cover;
     width: 100%;
     display: flex;
-    height: auto;
+    height: 100vh;
     padding: 4rem 20rem;
     position: relative;
     top: -23rem;

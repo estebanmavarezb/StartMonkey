@@ -5,6 +5,22 @@
 * Browsers: last 4 version
 */
 
+@font-face {
+    font-family: brocha;
+    src: url(../fonts/BROCHA/brocha-bold.otf);
+}
+
+@font-face {
+    font-family: brocha;
+    src: url(../fonts/BROCHA/brocha-light.otf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: brocha;
+    src: url(../fonts/BROCHA/brocha-regular.otf);
+}
+
 html {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -38,18 +54,22 @@ img {
 
 h1 {
     font-size: 3rem;
+    font-family: brocha;
 }
 
 h2 {
     font-size: 2.8rem;
+    font-family: brocha;
 }
 
 h3 {
     font-size: 2.6rem;
+    font-family: brocha;
 }
 
 p {
     font-size: 2.4rem;
+    font-family: brocha;
 }
 
 /* end global */
@@ -107,6 +127,8 @@ i {
     color: #4b4e54;
     text-decoration: none;
     cursor: pointer;
+    font-family: brocha;
+    font-weight: bold;
 }
 
 .nav-bar i {
@@ -277,7 +299,6 @@ i {
     position: absolute;
     top: 13rem;
     z-index: 99;
-    
 }
 
 
@@ -500,8 +521,17 @@ i {
     height: 21.2rem;
     position: relative;
     left: 0;
-    top: 1rem;
+    top: 0rem;
     z-index: 1
+}
+
+.our-game {
+    z-index: 1;
+    font-size: 6.8rem;
+    position: absolute;
+    top: -3rem;
+    padding: 0 4rem;
+    color: white;
 }
 
  .imagen-grilla-3 {
@@ -718,18 +748,10 @@ i {
 
   .gallery-cell {
     width: 100%;
-<<<<<<< HEAD
-    height: auto;
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    justify-content: center;
-=======
     height: 100vh;
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
->>>>>>> 5726a36ed2257c267545b1e3a95ef80ace2a5031
     -webkit-box-pack: center;
     -ms-flex-pack: center;     
         -ms-flex-pack: center;
@@ -867,8 +889,9 @@ i {
 
   .text h3 {
       font-size: 3.5rem;
-      font-weight: 600;
+      font-weight: bold;
       margin: 0;
+      font-family: brocha;
   }
 
   .text h5 {
@@ -1000,15 +1023,18 @@ i {
         font-size: 6.5rem;
         font-weight: 600;
         margin: 0;
+        font-family: brocha;
     }    
 
     .text h5 {
         font-size: 3.6rem;
+        font-family: brocha;
     }
 
     .text p {
         font-size: 2.3rem;
         width: 100%;
+        font-family: brocha;
     }
 
     .first-row .img {
@@ -1158,6 +1184,7 @@ i {
       padding: 1rem 2.5rem;
       margin: 2rem 0;
       border-radius: 1.8rem;
+      font-family: brocha;
   }
  
 
@@ -1202,7 +1229,6 @@ i {
   }
 
   .lamp-icon {
-<<<<<<< HEAD
       padding: 5rem;
       display: flex;
       display: -webkit-box;
@@ -1212,18 +1238,6 @@ i {
           -ms-flex-pack: center;
       -webkit-justify-content: center;
       text-align: center;
-=======
-    padding: 5rem;
-    position: relative;
-    left: 7rem;
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
->>>>>>> 5726a36ed2257c267545b1e3a95ef80ace2a5031
   }
 
   .lamp-icon img {
@@ -1737,6 +1751,7 @@ fieldset input {
     padding: 9px;
     font-size: 1.3rem;
     width: 100%;
+    font-family: brocha;
 }
 
 fieldset input:focus{
@@ -1754,6 +1769,7 @@ textarea {
     border: none;
     font-size: 1.3rem;
     padding: 5px;
+    font-family: brocha;
 }
 
 textarea:focus{
@@ -1774,6 +1790,7 @@ button {
     border-radius: 18px;
     font-size: 2.5rem;
     cursor: pointer;
+    font-family: brocha;
 }
 
 @media (max-width: 1024px){
@@ -1891,6 +1908,7 @@ footer {
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
+    font-family: brocha;
 }
 
 @media (min-width: 900px) {
