@@ -243,7 +243,7 @@ i {
 
 .fondo {
     position: absolute;
-    height: 165vh;
+    height: 210vh;
 }
 
 .grilla {
@@ -257,7 +257,7 @@ i {
     -ms-grid-rows: 1fr .5rem 1fr .5rem 1fr .5rem 1fr .5rem 1fr;
     grid-template-rows: repeat(5, 1fr);
     grid-gap: .5rem;
-    height: 150vh;
+    height: 170vh;
 }
 
 .grilla > *:nth-child(1) {
@@ -288,18 +288,36 @@ i {
 }
  
 .mono {
-    width: 22rem;
-    position: absolute;
-    top: 41rem;
-    right: 3%;
+    width: 26rem;
+    position: relative;
+    top: -1rem;
+    left: 9rem;
 }
 
 .rectangulo {
-    width: 35rem;
+    width: 32rem;
     height: 21rem;
     position: absolute;
     top: 0rem;
     z-index: 99;
+}
+
+@media (min-width: 400px) {
+    .mono {
+        width: 26rem;
+        position: relative;
+        top: -1rem;
+        left: 14rem;
+    }
+
+    .rectangulo {
+        width: 32rem;
+        height: 22rem;
+        position: absolute;
+        top: 2rem;
+        z-index: 99;
+    }
+    
 }
 
 
@@ -363,11 +381,14 @@ i {
     height: 100%;
 }
 
+@media (min-width: 768px) {
+    .fondo {
+        height: 200vh;
+    }
+}
+
 @media (min-width: 900px) {
     
-    .grillas {
-        margin-top: 11rem ;
-    }
     
     .fondo {
         position: absolute;
@@ -510,9 +531,9 @@ i {
 }
 
 .mono {
-    position: absolute;
-    right: 36rem;
-    top: 79rem;
+    position: relative;
+    left: 60rem;
+    top: -2rem;
     width: 24%;
     z-index: 2
 }
@@ -729,6 +750,28 @@ i {
 }
 }
 
+@media (min-width: 1024px) {
+    .fondo {
+        
+        height: 245vh;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .fondo {
+        
+        height: 285vh;
+    }
+}
+
+@media (min-width: 1440px) {
+    .fondo {
+        
+        height: 265vh;
+    }
+}
+
 /* CAROUSEL STYLE */
   
   .gallery {
@@ -737,7 +780,7 @@ i {
   
   .hero {
       width: 100%;
-      height: 50vh;
+      height: auto;
   }
 
   @media (min-width: 900px) {
@@ -1134,7 +1177,7 @@ i {
     background-size: cover;
     position: relative;
     z-index: 100;
-    top: -6rem;
+    top: -3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1150,6 +1193,19 @@ i {
             align-items: center;
     height: 100vh;
 
+}
+
+@media (min-width: 768px) {
+    .work-us-bg {
+        top: -5rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .work-us-bg {
+        top: -6rem;
+    }
 }
 
 @media (min-width: 900px) {
@@ -1195,6 +1251,17 @@ i {
     }
   }
 
+  .dona-1 {
+      width: 10rem;
+  }
+
+  .dona-2 {
+    width: 10rem;
+}
+
+.dona-3 {
+    width: 10rem;
+}
 
 
   /* FIFTH SECTION */
@@ -1324,7 +1391,7 @@ i {
     }
 
     .puzzle-b-p .pink {
-        width: 12rem;
+        width: 10rem;
     }
 
     .puzzle-b-p .blue {
@@ -1351,6 +1418,10 @@ i {
         left: 0rem;
     }
 
+    .puzzle-y img {
+        width: 10rem;
+    }
+
     @media (min-width: 400px) {
         .puzzle-y {
             width: 0;
@@ -1360,9 +1431,26 @@ i {
         }
     }
 
-    .puzzle-y img {
-        width: 10rem;
+    @media (min-width: 414px) {
+        .puzzle-b-p .pink {
+            width: 12rem;
+        }
+        .puzzle-b-p img {
+            margin-bottom: 46rem;
+        }
+
+        .puzzle-y img {
+            width: 15rem;
+        }
+
+        .puzzle-y {
+            width: 0;
+            height: 0;
+            left: 3rem;
+            bottom: 7rem;
+        }
     }
+    
 
 
   .texto-creative {
@@ -1425,7 +1513,7 @@ i {
   
       .puzzle-b-p {
         position: relative;
-        top: 22.2rem;
+        top: 24.2rem;
         right: 25.5rem;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1452,7 +1540,7 @@ i {
       }
   
       .puzzle-b-p .pink {
-          width: 12rem;
+          width: 15rem;
       }
   
       .puzzle-b-p .blue {
@@ -1463,7 +1551,7 @@ i {
         max-width: 1200px;
         width: 100%;
         left: -5rem;
-    bottom: 57.8rem;
+    bottom: 53rem;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -1484,7 +1572,7 @@ i {
       }
 
       .puzzle-y img {
-        width: 15rem;
+        width: 20rem;
     }
   
   
@@ -1508,10 +1596,10 @@ i {
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1024px) {
     .puzzle-y {
         left: -8rem;
-        bottom: 25.2rem;
+        bottom: 15.2rem;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -1520,8 +1608,8 @@ i {
 
     .puzzle-b-p {
         position: relative;
-        top: 22.5rem;
-        right: 35.7rem;
+        top: 27.5rem;
+        right: 31.7rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1538,9 +1626,29 @@ i {
                 flex: 0 0 calc(30% - 1rem);
         z-index: 1;
     }
+
+    .puzzle-b-p .pink {
+        width: 20rem;
+    }
+
+    .puzzle-b-p .blue {
+        width: 25rem;
+    }
+
+    .puzzle-b-p img {
+        margin-bottom: 60.5rem;
+    }
+
+    .puzzle-y img {
+        width: 30rem;
+    }
   }
   
   @media (min-width: 1200px) {
+
+    .creative {
+        height: 150vh;
+    }
     .puzzle-y {
         left: -8rem;
         bottom: 24.2rem;
@@ -1624,6 +1732,12 @@ i {
       .creative-person {
         background-position: unset;
       }
+  }
+
+  @media (min-width: 768px) {
+    .creative-person {
+        height: 50vh;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -1861,14 +1975,14 @@ button {
 
 @media (min-width: 768px) {
     .form-section {
-        top: -31rem;
+        top: -5rem;
     } 
 }
 
 
 @media (min-width: 1024px) {
     .form-section {
-        top: -41rem;
+        top: -7rem;
     } 
 }
 
@@ -1924,7 +2038,7 @@ footer {
     width: .1rem;
     height: 6.5rem;
     background-color: white;
-    margin: 0 1.5rem;
+    margin: 0 1rem;
 }
 
 .nav-footer.contenedor {
@@ -1937,8 +2051,10 @@ footer {
     list-style: none;
     padding: 0 0rem 0 0;
     flex: 0 0 calc(45% - 1rem);
-    margin-left: 2.5rem;
+    margin-left: 1.5rem;
 }
+
+
 
 .nav-footer ul li {
     margin-right: 1rem;
@@ -1960,6 +2076,7 @@ footer {
     }
     .img-footer::after {
         height: 15rem;
+        margin: 0 1.5rem;
     }
 
     footer {
@@ -1973,11 +2090,26 @@ footer {
     .nav-footer ul{
         padding: 0;
         margin-right: 5rem;
+        margin-left: 2.5rem;
     }
 
     .nav-footer.contenedor {
         width: 50%;
     }
 }
+
+@media (min-width: 768px) {
+    .nav-footer.contenedor {
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px){
+    .nav-footer.contenedor {
+        width: 65%;
+    }
+}
+
 
 

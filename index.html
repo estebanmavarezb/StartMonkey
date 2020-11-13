@@ -129,6 +129,9 @@
         <!-- <div class="bg-work">
             <img src="./img/bg-work-us.png" alt="">
         </div> -->
+        <img src="./img/dona1.png" class="dona-1" alt="">
+        <img src="./img/dona2.png" class="dona-2" alt="">
+        <img src="./img/dona3.png" class="dona-3" alt="">
         <div class="work-us contenedor">
             <div class="img-work">
                 <img src="./img/work with us.png" alt="">
@@ -202,18 +205,18 @@
                    <div class="icon-border"><i class="fab fa-facebook-f"></i></div>
                 </div>
             </div>
-            <form action="results.php" method="POST" name="form">
+            <form name="form" id="form">
                 <fieldset>
-                    <input placeholder="NAME" type="text" name="name" value="" required>
+                    <input placeholder="NAME" type="text" name="name" value="" class='input-form'>
                 </fieldset>
                 <fieldset>
-                    <input placeholder="EMAIL" type="email" name="email" required>
+                    <input placeholder="EMAIL" type="text" name="email" class='input-form'>
                 </fieldset>
                 <fieldset class="textarea">
-                    <textarea placeholder="MESSAGE" value="" name="message" id="" cols="30" rows="10"></textarea>
+                    <textarea placeholder="MESSAGE" value="" name="message" id="" cols="30" rows="10" class='input-form'></textarea>
                 </fieldset>
                 <fieldset class="button">
-                    <button type="submit" name="submit" value="Submit">SEND</button>
+                    <button type="button" name="submit" value="Submit" id="btn-submit" onclick="PHPfetch(event)">SEND</button>
                 </fieldset>
            </form>
         </div>
