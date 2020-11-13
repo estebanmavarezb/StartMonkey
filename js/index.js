@@ -38,17 +38,17 @@ const sE = elem => document.querySelector(elem);
 const Scroll = (elem, time = 0) => ScrollReveal().reveal(elem, {delay: time});
 
 //Function fetch the data
-const PHPfetch = async (e) => {
-    e.preventDefault();
-    const getPHP = await fetch('../result.php', {
-        method: 'POST',
-        headers: {
-            'Content-Type':'application/json'
-        },
-        body: JSON.stringify(inputValues)
-    });
-    console.log(getPHP)
-}
+// const PHPfetch = async (e) => {
+//     e.preventDefault();
+//     const getPHP = await fetch('result.php', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type':'application/json'
+//         },
+//         body: JSON.stringify(inputValues)
+//     });
+//     console.log(getPHP)
+// }
 
 window.onload = () => {
 

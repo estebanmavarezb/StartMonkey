@@ -205,7 +205,7 @@
                    <div class="icon-border"><i class="fab fa-facebook-f"></i></div>
                 </div>
             </div>
-            <form name="form" id="form">
+            <form name="form" id="form" action="result.php" method="POST">
                 <fieldset>
                     <input placeholder="NAME" type="text" name="name" value="" class='input-form'>
                 </fieldset>
@@ -216,7 +216,7 @@
                     <textarea placeholder="MESSAGE" value="" name="message" id="" cols="30" rows="10" class='input-form'></textarea>
                 </fieldset>
                 <fieldset class="button">
-                    <button type="button" name="submit" value="Submit" id="btn-submit" onclick="PHPfetch(event)">SEND</button>
+                    <button type="submit" name="submit" value="Submit" id="btn-submit">SEND</button>
                 </fieldset>
            </form>
         </div>
