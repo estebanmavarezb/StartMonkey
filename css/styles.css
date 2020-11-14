@@ -243,7 +243,7 @@ i {
 
 .fondo {
     position: absolute;
-    height: 210vh;
+    height: 180vh;
 }
 
 .grilla {
@@ -258,6 +258,7 @@ i {
     grid-template-rows: repeat(5, 1fr);
     grid-gap: .5rem;
     height: 170vh;
+    margin-top: 10rem;
 }
 
 .grilla > *:nth-child(1) {
@@ -381,9 +382,104 @@ i {
     height: 100%;
 }
 
+.our-game {
+    z-index: 100;
+    font-size: 6.8rem;
+    position: absolute;
+    top: 2rem;
+    padding: 0 4rem;
+    color: white;
+}
+
+@media (min-width: 360px) {
+    .rectangulo {
+        width: 30rem;
+        height: 17.2rem;
+        position: absolute;
+        left: 0;
+        top: 3.5rem;
+        z-index: 1;
+    }
+
+    .mono {
+        position: absolute;
+    left: 8rem;
+    top: -13rem;
+    width: 25rem;
+    z-index: 2;
+    }
+
+    .our-game {
+        z-index: 100;
+        font-size: 6.8rem;
+        position: absolute;
+        top: -2rem;
+        padding: 0 4rem;
+        color: white;
+    }
+}
+
+@media (min-width: 375px) {
+    .rectangulo {
+        width: 32rem;
+    height: 18.2rem;
+    position: absolute;
+    left: 0;
+    top: 8.5rem;
+    z-index: 1;
+    }
+
+    .mono {
+        position: absolute;
+    left: 6rem;
+    top: -13rem;
+    width: 29rem;
+    z-index: 2;
+    }
+
+    .our-game {
+        z-index: 100;
+        font-size: 6.8rem;
+        position: absolute;
+        top: 4rem;
+        padding: 0 4rem;
+        color: white;
+    }
+}
+
 @media (min-width: 768px) {
-    .fondo {
+    .grilla {
         height: 200vh;
+    }
+    .fondo {
+        height: 215vh;
+    }
+
+    .rectangulo {
+        width: 53rem;
+        height: 28rem;
+        position: absolute;
+        left: 0;
+        top: 11rem;
+        z-index: 2;    
+    }
+
+    .mono {
+        position: absolute;
+        left: 25rem;
+        top: -15rem;
+        width: 45rem;
+        z-index: 2;
+    }
+
+    .our-game {
+        z-index: 100;
+        font-size: 11.8rem;
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+        padding: 0 4rem;
+        color: white;
     }
 }
 
@@ -753,24 +849,158 @@ i {
 @media (min-width: 1024px) {
     .fondo {
         
-        height: 245vh;
+        height: 110vh;
+    }
+
+    .grilla {
+        margin-top: 15rem;
+        height: 100vh;
+    }
+
+    .rectangulo {
+        width: 28rem;
+        height: 19rem;
+        position: absolute;
+        left: 25rem;
+        top: 3rem;
+        z-index: 1;
+    }
+
+    .mono {
+        position: absolute;
+        left: 46rem;
+        top: -22rem;
+        width: 45rem;
+        z-index: 2;
+    }
+
+    .our-game {
+        z-index: 100;
+        font-size: 7rem;
+        position: absolute;
+        top: -2rem;
+        left: 22rem;
+        padding: 0 4rem;
+        color: white
     }
 }
 
 
 @media (min-width: 1280px) {
     .fondo {
-        
-        height: 285vh;
+        height: 160vh;
+    }
+
+    .grilla {
+        margin-top: 18rem;
+        height: 140vh;
+    }
+
+    .rectangulo {
+        width: 35rem;
+        height: 22rem;
+        position: absolute;
+        left: 31rem;
+        top: -1rem;
+        z-index: 1;
+    }
+
+    .our-game {
+        z-index: 100;
+        font-size: 8rem;
+        position: absolute;
+        top: -6rem;
+        left: 30rem;
+        padding: 0 4rem;
+        color: white;
+    }
+
+    .mono {
+        position: absolute;
+        left: 57rem;
+        top: -24rem;
+        width: 42rem;
+        z-index: 2;
+    }
+    
+}
+
+@media (min-width: 1336px) {
+    .fondo {
+        height: 225vh;
+    }
+
+    .grilla {
+        height: 200vh;
+    }
+
+    .rectangulo {
+        width: 37rem;
+        height: 21rem;
+        position: absolute;
+        left: 33rem;
+        top: -1rem;
+        z-index: 1;
+    }
+
+    .our-game {
+        z-index: 100;
+        font-size: 8rem;
+        position: absolute;
+        top: -7rem;
+        left: 33rem;
+        padding: 0 4rem;
+        color: white;
+    }
+
+    .mono {
+        position: absolute;
+        left: 61rem;
+        top: -24rem;
+        width: 40rem;
+        z-index: 2;
     }
 }
 
 @media (min-width: 1440px) {
     .fondo {
-        
-        height: 265vh;
+        height: 220vh;
+    }
+
+    .grilla {
+        margin-top: 10rem;
+        height: 200vh;
+    }
+
+    .rectangulo {
+        width: 38rem;
+        height: 22rem;
+        position: absolute;
+        left: 35rem;
+        top: 7rem;
+        z-index: 1;
+    }
+
+    .mono {
+        position: absolute;
+        left: 65rem;
+        top: -15rem;
+        width: 40rem;
+        z-index: 2;
+    }
+
+    .our-game {
+        z-index: 100;
+        font-size: 8rem;
+        position: absolute;
+        top: 1.5rem;
+        left: 36rem;
+        padding: 0 4rem;
+        color: white;
     }
 }
+
+
 
 /* CAROUSEL STYLE */
   
@@ -1171,13 +1401,15 @@ i {
 
   }
 
+/* work us */
+
 .work-us-bg {
     background-image: url(../img/bg-work-us.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     z-index: 100;
-    top: -3rem;
+    top: -6rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1191,12 +1423,13 @@ i {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100vh;
+    height: 150vh;
 
 }
 
 @media (min-width: 768px) {
     .work-us-bg {
+        height: 100vh;
         top: -5rem;
     }
 }
@@ -1228,6 +1461,19 @@ i {
     margin-top: 10rem;
 }
 
+.work-us.contenedor {
+    width: 95%;
+}
+
+.work-us h2 {
+    margin-top: 10rem;
+    font-size: 2.4rem;
+}
+
+.texto-work {
+    padding: 0 1rem;
+}
+
 .work-us p {
     margin-bottom: 0;
 }
@@ -1243,35 +1489,105 @@ i {
       border-radius: 1.8rem;
       font-family: brocha;
   }
+
+  .dona-1 {
+    top: 47rem;
+    right: 0;
+    position: absolute;
+    width: 9rem;
+  }
+  
+
+  .dona-2 {
+    position: absolute;
+    right: 2rem;
+    top: 8rem;
+    width: 13rem;
+}
+
+  .dona-3 {
+    width: 9rem;
+    position: absolute;
+    left: 0rem;
+    top: 10rem;
+    z-index: -1;
+}
+
+.dona-4 {
+    width: 5rem;
+    position: absolute;
+    left: 0rem;
+    top: 80rem;
+    z-index: -1;
+}
+
+@media (min-width: 375px) {
+    .dona-1 {
+        top: 60rem;
+        right: 0;
+        position: absolute;
+        width: 9rem;
+      }
+      
+    
+      .dona-2 {
+        position: absolute;
+        right: 2rem;
+        top: 8rem;
+        width: 13rem;
+    }
+    
+      .dona-3 {
+        width: 9rem;
+        position: absolute;
+        left: 0rem;
+        top: 10rem;
+        z-index: -1;
+    }
+    
+    .dona-4 {
+        width: 5rem;
+        position: absolute;
+        left: 0rem;
+        top: 100rem;
+        z-index: -1;
+    }
+}
  
 
   @media (min-width: 900px) {
     .work-us.contenedor {
         width: 30%;
     }
+
+    .dona-1 {
+        top: 50rem;
+        right: 0;
+        position: absolute;
+        width: 15rem;
+      }
+      
+    
+      .dona-2 {
+        position: absolute;
+        right: 20rem;
+        top: 10rem;
+        width: 13rem;
+    }
+    
+    .dona-3 {
+        width: 18rem;
+        position: absolute;
+        left: 0rem;
+        top: 18rem;
+    }
+
+    .dona-4 {
+        display: none;
+    }
   }
 
-  .dona-1 {
-    top: 50rem;
-    right: 0;
-    position: absolute;
-    width: 15rem;
-  }
-  
-
-  .dona-2 {
-    position: absolute;
-    right: 20rem;
-    top: 10rem;
-    width: 13rem;
-}
-
-.dona-3 {
-    width: 18rem;
-    position: absolute;
-    left: 0rem;
-    top: 18rem;
-}
+ 
 
 
   /* FIFTH SECTION */
@@ -1430,6 +1746,20 @@ i {
 
     .puzzle-y img {
         width: 10rem;
+    }
+
+    @media (min-width: 375px) {
+        .puzzle-b-p img {
+            margin-bottom: 54.5rem;
+        }
+
+        .puzzle-y {
+            bottom: 10rem;
+        }
+
+        .puzzle-y img {
+            width: 15rem;
+        }
     }
 
     @media (min-width: 400px) {
@@ -2031,7 +2361,7 @@ footer {
 
 .img-footer img {
     text-align: center;
-    width: auto;
+    width: 100%;
 }
 
 .nav-footer.contenedor {
