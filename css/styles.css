@@ -27,6 +27,7 @@ html {
     font-size:  62.5%; /** 1rem = 10px */
     margin: 0;
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: auto;
 }
 
 *, *::before, *:after {
@@ -72,6 +73,9 @@ p {
     font-family: brocha;
 }
 
+.d-none {
+    display: none;
+}
 /* end global */
 
 /*animaciones*/
