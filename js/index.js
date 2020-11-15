@@ -50,6 +50,7 @@ const Scroll = (elem, time = 0) => ScrollReveal().reveal(elem, {delay: time});
 //     console.log(getPHP)
 // }
 
+
 window.onload = () => {
 
     const bars = sE(dom.bars);

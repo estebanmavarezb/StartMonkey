@@ -2,12 +2,17 @@
 main {
     height: auto;
 }
+
+.corte {
+   box-sizing: content-box;
+}
 /*hero*/
 
 .hero-toons {
     width: 100%;
     height: auto;
 }
+
 
 /* toons container */
 
@@ -72,10 +77,6 @@ main {
     }
 }
 
-@media (min-width: ) {
-    
-}
-
 @media (min-width: 1280px) {
 
     .social-toons {
@@ -122,12 +123,27 @@ main {
     }
 }
 
+@media (min-width: 1024px) {
+    .social-toons {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1280px) {
+    .social-toons {
+        height: 100vh;
+    }
+}
+
+
+
 /*grilla*/
 
 .bg-grilla-toons {
     background-image: url(../img/bg-game.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     height: 135vh;
     display: flex;
     flex-direction: column;
@@ -135,6 +151,9 @@ main {
     justify-content: center;
 }
 
+.color-grilla {
+    width: 95%;
+}
 .texto-grilla {
     width: 95%;
     position: relative;
@@ -154,6 +173,7 @@ main {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     height: 105vh;
+    grid-row-gap: 1rem
 }
 
 .img-grilla:nth-child(1) {
@@ -215,13 +235,15 @@ main {
     }
 }
 
-@media (min-width: 1280px) {
+
+@media (min-width: 1024px) {
 
     .bg-grilla-toons {
         background-image: url(../img/bg-game.png);
         background-repeat: no-repeat;
+        background-position: unset;
         background-size: cover;
-        height: 175vh;
+        height: 125vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -229,7 +251,7 @@ main {
     }
 
     .texto-grilla {
-        width: 50%;
+        width: 95%;
         position: relative;
         top: 2rem;
     }
@@ -242,12 +264,11 @@ main {
     .grilla-website {
         position: relative;
         height: auto;
-        width: 50%;
+        width: 95%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
         height: auto;
-        grid-column-gap: 2rem;
     }
     
     .img-grilla:nth-child(1) {
@@ -272,11 +293,11 @@ main {
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 0rem 3rem 3rem 3rem;
+        padding: 1rem 4rem 2rem 1rem;
     }
     
     .texto-edw h2 {
-        margin: 0;
+        margin: 0 0 .5rem 0;
         text-transform: uppercase;
         color: white;
         font-weight: 700;
@@ -284,7 +305,7 @@ main {
     }
     
     .img-grilla:nth-child(2) img {
-        width: 90%;
+        width: 80%;
     }
     
     
@@ -318,14 +339,39 @@ main {
     }
 }
 
+@media (min-width: 1280px) {
+    .bg-grilla-toons {
+        height: 180vh;
+    }
+
+    .texto-grilla {
+        width: 50%;
+        top: 2rem;
+    }
+    
+    .grilla-website {
+        width: 50%;
+    }
+
+    .img-grilla:nth-child(2) {
+        padding: 1rem 3rem 1rem 1rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .bg-grilla-toons {
+        height: 150vh;
+    }
+}
+
 
 /*secction selfie*/
-
 .bg-selfie {
     position: relative;
     height: auto;
     background-image: url(../img/bg-work-us.png);
     background-repeat: no-repeat;
+    background-size: contain;
     top: -9rem;
     display: flex;
     flex-direction: column;
@@ -340,11 +386,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20rem;
+    margin-top: 15rem;
 }
 
 .selfie.contenedor {
-    width: 50%;
+    width: 95%;
 }
 
 .texto-selfie h2 {
@@ -366,6 +412,13 @@ main {
     margin-bottom: 5rem;
 }
 
+/*carrusel*/
+
+
+/*perfil*/
+
+
+
 .perfil-selfie {
     height: auto;
     display: flex;
@@ -376,5 +429,406 @@ main {
 }
 
 .perfil-selfie.contenedor {
-    width: 50%;
+    width: 95%;
+}
+
+.img-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-perfil {
+    margin-bottom: 5rem;
+}
+
+.imagen-perfil:nth-child(2) {
+    display: none;
+}
+
+.imagen-perfil:nth-child(3) {
+    display: none;
+}
+
+.imagen-perfil:nth-child(6) {
+    display: none;
+}
+
+
+
+
+@media (min-width: 1024px) {
+    .bg-selfie {
+        position: relative;
+        height: auto;
+        background-image: url(../img/bg-work-us.png);
+        background-repeat: no-repeat;
+        top: -9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .selfie {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30rem;
+    }
+    
+    .selfie.contenedor {
+        width: 70%;
+    }
+    
+    .texto-selfie h2 {
+        text-transform: uppercase;
+    }
+    
+    .texto-selfie p {
+        margin-bottom: 5rem;
+    }
+    
+    .img-selfie {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .imagen-selfie {
+        flex: 0 0 calc(40% - 5rem);
+        margin-bottom: 5rem;
+    }
+    
+    /*pefil*/
+
+    .perfil-selfie {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    
+    .perfil-selfie.contenedor {
+        width: 70%;
+    }
+
+    .img-perfil {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .imagen-perfil {
+        flex: 0 0 calc(40% - 5rem);
+        margin-bottom: 5rem;
+    }
+
+    .imagen-perfil:nth-child(2) {
+        display: block;
+    }
+    
+    .imagen-perfil:nth-child(3) {
+        display: block;
+    }
+    
+    .imagen-perfil:nth-child(6) {
+        display: block;
+    }
+    
+}
+
+@media (min-width: 1280px) {
+
+    .imagen-selfie {
+        flex: 0 0 calc(33.3% - 5rem);
+        margin-bottom: 5rem;
+    }
+
+    .imagen-perfil {
+        flex: 0 0 calc(33.3% - 5rem);
+        margin-bottom: 5rem;
+    }
+}
+
+/*acuosos*/
+
+.bg-acuosos {
+    background-image: url(../img/bg-acuosos.png);
+    background-repeat: no-repeat;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.games {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.games.contenedor {
+    width: 95%;
+}
+
+.img-acuosos {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.img-mobile {
+    z-index: 2;
+}
+
+.img-desktop {
+    position: relative;
+    width: 60rem;
+    z-index: 1;
+    right: 1rem;
+    top: 4rem;
+}
+
+
+.titulo-acuosos{
+    margin-bottom: 5rem;
+}
+
+.titulo-acuosos h2 {
+    display: none;
+}
+
+.titulo-acuosos h2,
+h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.titulo-acuosos h3{
+    width: 25rem;
+}
+
+.texto-acuosos p{
+    font-size: 2.1rem;
+    font-family: unset;
+}
+
+.banana2 {
+    position: absolute;
+    width: 25%;
+    right: 0rem;
+    top: 10rem;
+}
+
+.banana1 {
+    width: 25%;
+    position: absolute;
+    bottom: -7rem;
+    
+}
+
+@media (min-width: 375px) {
+    .bg-acuosos {
+        height: 115vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .bg-acuosos {
+        height: 135vh;
+    }
+    .banana2 {
+        top: 0;
+    }
+
+    .banana1 {
+        bottom: -15rem;
+    }
+
+    .img-desktop {
+        top: 8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bg-acuosos {
+        height: 100vh;
+    }
+    .games {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+    
+    .games.contenedor {
+        width: 70%;
+    }
+
+    .titulo-acuosos h2 {
+        display: block;
+    }
+    
+    .img-acuosos {
+        display: flex;
+        margin-bottom: 5rem;
+    }
+    
+    .img-mobile {
+        position: relative;
+        top: 5rem;
+        left: 4rem;
+    }
+    
+    .banana2 {
+        position: absolute;
+        width: 15%;
+        right: -14rem;
+        top: 15rem;
+    }
+    
+    .banana1 {
+        width: 20%;
+        position: absolute;
+        bottom: 10rem;
+        left: -15rem;
+    }
+    
+}
+
+
+@media (min-width: 1280px) {
+
+    .bg-acuosos {
+        height: 200vh;
+    }
+    
+    .games.contenedor {
+        width: 50%;
+    }
+    
+    .img-acuosos {
+        display: flex;
+        margin-bottom: 5rem;
+    }
+    
+    .img-mobile {
+        position: relative;
+        top: 5rem;
+        left: 4rem;
+    }
+    
+   
+    .banana2 {
+        width: 25%;
+        right: -25rem;
+        top: 10rem;
+    }
+    
+    .banana1 {
+        width: 40%;
+        bottom: 10rem;
+        left: -32rem;
+    }
+}
+
+/*ninja secction */
+
+.bg-ninja {
+    height: 100vh;
+    position: relative;
+    top: -4rem;
+    background-image: url(../img/bg-horaninja.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.secction-ninja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.secction-ninja.contenedor {
+    width: 95%;
+}
+
+.titulo-ninja h2 {
+    text-transform: uppercase;
+}
+
+.texto-ninja p{
+    font-size: 1.8rem;
+    font-weight: unset;
+}
+
+.imagenes-ninja {
+    position: relative;
+    display: flex;
+    margin-bottom: 15rem;
+}
+
+.img-ninja:nth-child(1) {
+    width: auto;
+}
+
+.img-ninja:nth-child(2) {
+    position: absolute;
+    width: 20rem;
+    right: -1rem;
+    top: 15rem;
+}
+
+@media (min-width: 360px) {
+    .bg-ninja {
+        top: -3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .bg-ninja {
+        height: 150vh;
+        top: -10rem; 
+        background-size: cover;  
+    }
+    
+    .secction-ninja {
+        margin-top: 10rem;
+    }
+    
+    .secction-ninja.contenedor {
+        width: 50%;
+    }
+    
+    .texto-ninja p{
+        font-size: 1.8rem;
+        font-weight: unset;
+    }
+
+    .titulo-acuosos h3 {
+        width: auto;
+    }
+    
+    .img-ninja:nth-child(1) {
+        width: 50rem;
+    }
+    
+    .img-ninja:nth-child(2) {
+        position: absolute;
+        width: 30rem;
+        right: 0;
+        top: 15rem;
+    }
 }
