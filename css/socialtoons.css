@@ -557,6 +557,241 @@ main {
     }
 }
 
+
+/* STICKERS */
+.sticker {
+    position: relative;
+    height: auto;
+    background-image: url(../img/bg-stickers.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticker-row1 {
+    padding: 12rem 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10rem;
+    width: 100%;
+}
+
+.row1-img {
+    width: 50%;
+}
+
+.juice-box {
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+    left: 14%;
+    top: 4%;
+}
+
+.one-sticker {
+    width: 7%;
+    position: absolute;
+    z-index: 2;
+    left: 13%;
+    top: 4%;
+}
+
+.pointed-line {
+    width: 28%;
+    height: 14%;
+    position: absolute;
+    z-index: 3;
+    left: 35%;
+    top: 6%;
+}
+
+.row1-head {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 9rem;
+}
+
+.row1-head h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.sticker-row2 {
+    padding: 5rem 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 17rem;
+}
+
+.row2-head {
+    display: flex;
+    text-align: left;
+    width: 50%;
+    padding-left: 5rem;
+}
+
+.phone-2 {
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+    right: 13%;
+    top: 17%;
+}
+
+.two-sticker {
+    width: 7%;
+    position: absolute;
+    z-index: 3;
+    right: 31%;
+    top: 19%;
+}
+
+.pointed-line2 {
+    width: 28%;
+    height: 9%;
+    position: absolute;
+    z-index: 3;
+    right: 35%;
+    top: 26%;
+}
+
+.phone-genial {
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+    left: 14%;
+    top: 28%;
+}
+
+.three-sticker {
+    width: 7%;
+    position: absolute;
+    z-index: 4;
+    left: 33%;
+    top: 34%;
+}
+
+.sticker-pg {
+    width: 14%;
+    z-index: 8;
+    position: absolute;
+    top: 39%;
+    left: 24%;
+}
+
+.genial-p {
+    margin-top: 10rem;
+}
+
+.game-rewards {
+    padding: 5rem 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.game-rewards-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 8rem;
+}
+
+.game-rewards-text h2{
+     margin: 0;
+     text-transform: uppercase;
+     font-size: 4rem;
+}
+
+.game-rewards-text h3{
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.ga-img {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 11rem;
+}
+
+.logros{
+    width: 50%;
+}
+
+.accesorios-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 13rem;
+}
+
+.accesorios-container h2{
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.box-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-text img {
+    width: 50%;
+}
+
+.right {
+    text-align: right;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10rem 6rem;
+}
+
+.filter-container h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding-left: 7rem;
+}
+
+.filter-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 7rem;
+}
+
+.filter-sticker {
+    width: 14% !important;
+    position: absolute;
+    bottom: 6%;
+    left: 22%;
+}
+
+.filter-box img {
+    width: 20%;
+}
+
+.filter-text {
+    text-align: right;
+    width: 50%;
+    padding-right: 7rem;
+}
 /*acuosos*/
 
 .bg-acuosos {
@@ -566,6 +801,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    top: -19rem;
 }
 
 .games {
@@ -800,7 +1037,7 @@ h3 {
 @media (min-width: 1280px) {
     .bg-ninja {
         height: 150vh;
-        top: -10rem; 
+        top: -27rem;; 
         background-size: cover;  
     }
     
