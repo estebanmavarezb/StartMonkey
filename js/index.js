@@ -1,11 +1,14 @@
 //Object that contains the strings of the HTML
 const dom = {
+    homePath: window.location.pathname.replace('/','').replace('/','').toLowerCase(),
+    active: 'active',
     bars: '.bars',
     navList: '.nav-list',
     menuClose: '.bars.close',
     navListActive: 'nav-list_active',
     monkey: '.mono',
     imgGrid(num) { return `.imagen-grilla-${num}` },
+    donuts(num) { return `.dona-${num}`},
     banana: '.banana',
     cel: '.cel',
     lamp: '.lamp', //It's an img tag
@@ -17,6 +20,7 @@ const dom = {
     yellow: '.puzzle-y',
     inputForm: '.input-form'
 }
+console.log(dom.homePath)
 //Object that contains style properties from css
 const styles = {
     none(elem){ return elem.style.display = 'none' },
@@ -50,13 +54,15 @@ const Scroll = (elem, time = 0) => ScrollReveal().reveal(elem, {delay: time});
 //     console.log(getPHP)
 // }
 
-
 window.onload = () => {
 
     const bars = sE(dom.bars);
     const navList = sE(dom.navList);
     const menuClose = sE(dom.menuClose);
-    const inputForm = document.querySelectorAll(dom.inputForm)
+    const inputForm = document.querySelectorAll(dom.inputForm);
+    const homeLi = sE(`${dom.navList} #home`);
+
+    (dom.homePath === 'startmonkey') ? styles.toggle(homeLi.children[0], dom.active) : null;
 
     //Event to open the menu
     bars.onclick = () => {
@@ -81,31 +87,34 @@ window.onload = () => {
         }
     })
 
-        //ScrollReveal
-        Scroll(dom.monkey);
-        Scroll(dom.imgGrid(3));
-        Scroll(dom.imgGrid(4), 50);
-        Scroll(dom.imgGrid(5), 100);
-        Scroll(dom.imgGrid(6), 150);
-        Scroll(dom.imgGrid(7), 200);
-        Scroll(dom.imgGrid(8), 250);
-        Scroll(dom.imgGrid(9), 300);
-        Scroll(dom.imgGrid(10), 350);
-        Scroll(dom.imgGrid(11), 400);
-        Scroll(dom.imgGrid(12), 410);
-        Scroll(dom.imgGrid(13), 420);
-        Scroll(dom.imgGrid(14), 430);
-        Scroll(dom.imgGrid(15), 440);
-        Scroll(dom.imgGrid(16), 450);
-        Scroll(dom.imgGrid(17), 460);
-        Scroll(dom.banana, 400);
-        Scroll(dom.cel, 400);
-        Scroll(dom.lamp, 400);
-        Scroll(dom.world, 400);
-        Scroll(dom.statistics, 400);
-        Scroll(dom.lampIcon, 400);
-        Scroll(dom.pink, 400);
-        Scroll(dom.blue, 400);
-        Scroll(dom.yellow, 400);
-
+    //ScrollReveal
+    Scroll(dom.monkey);
+    Scroll(dom.imgGrid(3));
+    Scroll(dom.imgGrid(4));
+    Scroll(dom.imgGrid(5));
+    Scroll(dom.imgGrid(6));
+    Scroll(dom.imgGrid(7));
+    Scroll(dom.imgGrid(8));
+    Scroll(dom.imgGrid(9));
+    Scroll(dom.imgGrid(10));
+    Scroll(dom.imgGrid(11));
+    Scroll(dom.imgGrid(12));
+    Scroll(dom.imgGrid(13));
+    Scroll(dom.imgGrid(14));
+    Scroll(dom.imgGrid(15));
+    Scroll(dom.imgGrid(16));
+    Scroll(dom.imgGrid(17));
+    Scroll(dom.donuts(1));
+    Scroll(dom.donuts(2));
+    Scroll(dom.donuts(3));
+    Scroll(dom.donuts(4));
+    Scroll(dom.banana);
+    Scroll(dom.cel);
+    Scroll(dom.lamp);
+    Scroll(dom.world);
+    Scroll(dom.statistics);
+    Scroll(dom.lampIcon);
+    Scroll(dom.pink);
+    Scroll(dom.blue);
+    Scroll(dom.yellow);
 }
