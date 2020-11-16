@@ -146,12 +146,6 @@ i {
 .nav-bar i {
     color: #4a4e53;
 }
-.nav-bar a:hover {
-    background-color: #4a4e53;
-    color: #fff100 !important;
-    padding: .5rem 1rem;
-    border-radius: 1rem;
-}
 
 .active {
     background-color: #4a4e53;
