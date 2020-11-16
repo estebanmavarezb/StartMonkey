@@ -950,7 +950,7 @@ i {
     }
 
     .our-game {
-        padding: 0 4rem;
+        z-index: 100;
         top: -8rem;
         left: 30rem;
     }

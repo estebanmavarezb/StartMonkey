@@ -1,16 +1,15 @@
 <?php
+    $destinatario = 'rubene250@gmail.com';
+
     $name = $_POST['name'];
-    $email = $_POST['email'];
+    $mail = $_POST['email'];
     $message = $_POST['message'];
-    $toMail = 'rubenmavarezb@gmail.com';
-    $subject = 'You have a new message from '.$name;
-     
-    if(!empty($name) && !empty($email)){
- 
-        if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-            mail($toMail, $subject, $message);
-        }
-    } else {
-        //header('Location:index.html');
-        echo json_encode('hola gay');
-    }
+
+    $messageComplete = $message . "\nAtentamente: " . $name;
+
+    mail($destinatario, $mail, $message);
+
+    echo "<script>alert('correo enviado exitosa mente')</script>";
+    echo "<script>setTimeout(\"location.href='index.html'\",10)</script>";
+
+?>
