@@ -694,10 +694,37 @@ main {
 .game-rewards {
     padding: 5rem 5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     
 }
+
+.game-rewards-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gr-title {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10%;
+    width: 100%;
+    bottom: 49%;
+}
+
+.gr-title h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.gr-title h3 {
+    font-size: 4rem;
+    margin: 0;
+}
+
 
 .game-rewards-text {
     width: 50%;
@@ -752,6 +779,18 @@ main {
     width: 50%;
 }
 
+.box-text2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-text2 img {
+    width: 50%;
+}
+
+
 .right {
     text-align: right;
 }
@@ -792,6 +831,191 @@ main {
     width: 50%;
     padding-right: 7rem;
 }
+
+.reverse {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+
+    .sticker {
+        background-size: 100%;
+    }
+
+    .sticker-row1 {
+        flex-direction: column-reverse;
+    }
+
+    .row1-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .row1-head {
+        width: 100%; 
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .juice-box {
+        width: 45%;
+        position: unset;
+    }
+
+    .one-sticker {
+       top: initial; 
+       left: 22%;
+       width: 15%;
+    }
+
+    .pointed-line, .pointed-line2 {
+        display: none;
+    }
+
+    .sticker-row2 {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+    .row2-head {
+        text-align: center;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .phone-2 {
+        position: unset;
+        width: 45%;
+        margin-bottom: 3rem;
+    }
+
+    .two-sticker {
+        width: 15%;
+        top: 26%;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        padding: 1rem 5rem;
+    }
+
+    .phone-genial {
+        position: unset;
+        width: 45%;
+    }
+
+    .three-sticker {
+        width: 15%;
+        top: initial;
+        left: 25%;
+    }
+
+    .sticker-pg {
+        width: 25%;
+        top: 50%;
+        left: initial;
+        right: 24%;
+    }
+
+    .gr-title {
+       position: initial;
+       text-align: center; 
+    }
+
+    .gr-title h2 {
+        margin-bottom: 2rem;
+    }
+
+    .gr-title h3 {
+        margin-bottom: 2rem;
+    }
+
+    .game-rewards-block {
+        flex-direction: column-reverse;
+    }
+
+    .game-rewards-text {
+        width: 100%;
+     }
+
+     .ga-img {
+         margin-right: 0;
+     }
+
+     .logros {
+         width: 93%;
+     }
+
+     .accesorios-container {
+        align-items: center;
+     }
+
+     .box-text {
+         flex-direction: column;
+     }
+
+     .box-text img {
+        width: 100%;
+    }
+
+    .box-text2 {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .box-text2 img {
+       width: 100%;
+   }
+
+    .filter-container {
+    align-items: center;
+    }
+    
+    .filter-container h2{
+        padding-left: 0;
+    }
+
+    .filter-box {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .filter-text {
+        text-align: center;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .filter-box img {
+        width: 50%;
+    }
+
+    .filter-sticker {
+        width: 23% !important;
+        position: absolute;
+        bottom: 1%;
+        right: 22%;
+        left: initial;
+    }
+    
+    .aj-container {
+        text-align: center;
+    }
+
+    .first-block {
+        width: 100% !important;
+    }
+
+   
+}
+
+
 /*acuosos*/
 
 .bg-acuosos {
@@ -1030,7 +1254,11 @@ h3 {
 
 @media (min-width: 360px) {
     .bg-ninja {
-        top: -3rem;
+        top: -25rem;
+    }
+
+    footer {
+        height: 100vh !important;
     }
 }
 
@@ -1073,7 +1301,7 @@ h3 {
 .aventura-jugosa {
     height: auto;
     position: relative;
-    top: -4rem;
+    top: -15rem;
     background-image: url(../img/bg-aventura\ jugosa.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1100,9 +1328,6 @@ h3 {
     margin: 1rem;
 }
 
-.
-element.style {
-}
 .flickity-page-dots {
     position: absolute;
     width: 100%;
