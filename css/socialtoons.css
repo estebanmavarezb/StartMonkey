@@ -1015,6 +1015,70 @@ main {
    
 }
 
+@media (max-width: 376px) {
+    .juice-box {
+        width: 70%;
+    }
+
+    .one-sticker {
+        left: 14%;
+    width: 20%;
+    }
+
+    .phone-2 {
+        width: 70%;
+    }
+
+    .two-sticker {
+        width: 22%;
+        top: 22%;
+        right: 23%;
+    }
+
+    .phone-genial {
+        width: 70%;
+    }
+
+    .three-sticker {
+        width: 20%;
+        left: 17%;
+    }
+
+    .sticker-pg {
+       top: 43%; 
+    }
+
+    .game-rewards-text {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .ga-img {
+        width: 100%;
+    }
+
+    .accesorios-container {
+        padding: 0px 4rem;
+    }
+
+    .filter-container {
+        padding: 10rem 4rem;
+    }
+
+    .filter-box img {
+        width: 81%;
+    }
+
+    .filter-sticker {
+        width: 36% !important;
+        right: 12%;
+    }
+
+    .aj-container {
+        width: 100% !important;
+    }
+}
+
 
 /*acuosos*/
 
