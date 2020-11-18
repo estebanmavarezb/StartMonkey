@@ -18,6 +18,9 @@ body {
     height: auto;
 }
 
+.hero-mobile {
+    display: none;
+}
 
 /* toons container */
 
@@ -1048,6 +1051,14 @@ body {
     }
 
     .img-selfie {
+        display: none;
+    }
+
+    .hero-mobile {
+        display: flex;
+    }
+
+    .remove {
         display: none;
     }
    
