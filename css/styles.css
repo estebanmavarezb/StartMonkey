@@ -41,6 +41,7 @@ html {
 
 img {
     width: 100%;
+    
 }
 
 .contenedor {
@@ -1065,9 +1066,12 @@ i {
     }
   }
 
+  .flickity-viewport {
+      height: 700px; 
+  }
   .gallery-cell {
     width: 100%;
-    height: auto;
+    height: 700px;
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1078,6 +1082,18 @@ i {
     counter-increment: gallery-cell;
   }
   
+  @media (max-width: 1024px){
+      .flickity-viewport, .gallery-cell{
+          height: 550px;
+      }
+  }
+
+  @media (max-width: 450px){
+    .flickity-viewport, .gallery-cell{
+        height: 350px;
+    }
+}
+
   .gallery-cell img {
     display: block;
     max-width: 100%;
