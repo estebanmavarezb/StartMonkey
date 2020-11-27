@@ -875,6 +875,7 @@ body {
     .juice-box {
         width: 45%;
         position: unset;
+        height: 55vh;
     }
 
     .one-sticker {
@@ -902,6 +903,7 @@ body {
         position: unset;
         width: 45%;
         margin-bottom: 3rem;
+        height: 50vh;
     }
 
     .two-sticker {
@@ -919,6 +921,7 @@ body {
     .phone-genial {
         position: unset;
         width: 45%;
+        height: 55vh;
     }
 
     .three-sticker {
@@ -961,6 +964,7 @@ body {
 
      .logros {
          width: 93%;
+         height: 65vh;
      }
 
      .accesorios-container {
@@ -1073,6 +1077,7 @@ body {
 @media (max-width: 376px) {
     .juice-box {
         width: 70%;
+        height: 50vh;
     }
 
     .one-sticker {
@@ -1082,6 +1087,7 @@ body {
 
     .phone-2 {
         width: 70%;
+        height: 55vh;
     }
 
     .two-sticker {
@@ -1092,6 +1098,7 @@ body {
 
     .phone-genial {
         width: 70%;
+        height: 55vh;
     }
 
     .three-sticker {
