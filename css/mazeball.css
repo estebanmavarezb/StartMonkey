@@ -242,6 +242,7 @@ iframe {
 
   .mz-image img {
     max-width: 100%;
+    height: 219px;
   }
 
   .gameplay-section {
@@ -283,9 +284,16 @@ iframe {
 
   .game-image img {
       max-width: 100%;
+      height: 272px;
   }
 
   .update-container {
-    height:30vh;
+    height:45vh;
   }
+
+  .gallery-cell img {
+    display: block;
+    max-width: 100%;
+    max-height: 280px;
+}
 }

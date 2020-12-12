@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SmartMonkey</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -28,9 +28,9 @@
             </div>
             <ul class="nav-list">
                 <li><a href="index.html" class="home">Home</a></li>
-                <li><a href="/">Games</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Contact</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -59,7 +59,7 @@
 
     <div class="gameplay-section">
         <h2 class="video-headline">GAME PLAY</h2>
-        <div class="video">
+        <div class="video" id="games">
             <!-- <iframe class="iframe" width="700" height="500" src="https://www.youtube.com/embed/TmKh7lAwnBI"></iframe> -->
             <img src="./img/play-video.png" alt="">
         </div>
@@ -73,7 +73,8 @@
     <div class="online-container">
         <div class="online-headline">
             <p> Lorem ipsum dolor sit amet consectetur adipiscing elit, venenatis erat tellus mus accumsan vehicula, nisl convallis nulla molestie dis eget.</p>
-            <h2>GAME</h2>
+            <h2 class="d-none">GAME</h2>
+            <h2 class="online">ONLINE</h2>
             <p> Lorem ipsum dolor sit amet consectetur adipiscing elit, venenatis erat tellus mus accumsan vehicula, nisl convallis nulla molestie dis eget.</p>
         </div>
         <div class="online-image">
@@ -101,6 +102,42 @@
                 <div class="gallery-cell"><img src="./img/downloads-image.png" alt=""></div>
               </div>
         </div>
+        <div class="texto-download">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ducimus non officiis nisi, est, nihil officia voluptas molestias eveniet fuga excepturi harum optio nemo cupiditate provident quo doloribus! Alias, corporis!</p>
+        </div>
+        <div class="download-head maps">
+            <div class="download-head maps-text">
+                <h2>MAPS</h2>
+            </div>
+            <div class="download-carousel">
+                <div class="gallery js-flickity white">
+                    <div class="gallery-cell"><img class="maps-img" src="./img/maps.png" alt=""></div>
+                    <div class="gallery-cell"><img class="maps-img" src="./img/maps.png" alt=""></div>
+                    <div class="gallery-cell"><img class="maps-img" src="./img/maps.png" alt=""></div>
+                    <div class="gallery-cell"><img class="maps-img" src="./img/maps.png" alt=""></div>
+                    <div class="gallery-cell"><img class="maps-img" src="./img/maps.png" alt=""></div>
+                  </div>
+            </div>
+            <div class="texto-download">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ducimus non officiis nisi, est, nihil officia voluptas molestias eveniet fuga excepturi harum optio nemo cupiditate provident quo doloribus! Alias, corporis!</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="bg-phone">
+        <div class="img-ghost">
+            <img class="ghost" src="./img/ghost.png" alt="">
+        </div>
+        <div class="image-display">
+            <img src="./img/primer-cel.png" alt="">
+            <img src="./img/cel-2.png" alt="">
+            <img src="./img/tercer-cel.png" alt="">
+        </div>
+
+        <div class="img-mini-robot">
+            <img class="robot" src="./img/mini-robot.png" alt="">
+        </div>
     </div>
 
      <!--footer-->
@@ -110,10 +147,10 @@
                 <img src="./img/logo-tipo-w.png" alt="">
             </div>
             <ul>
-                <li><a href="/" class="home">Home</a></li>
-                <li><a href="/">Games</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </footer>
