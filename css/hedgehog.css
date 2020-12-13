@@ -1,3 +1,10 @@
+p {
+    font-size: 16px;
+    font-family: 'brocha';
+    font-weight: unset;
+}
+
+
 .happyhh-hero {
     background-image: url(../img/hero-img-HH.png);
     background-repeat: no-repeat;
@@ -261,7 +268,7 @@
 
 @media (max-width: 768px) {
     .online-container {
-        height: 80vh;
+        height: 60vh;
         align-items: center;
         justify-content: center;
         top: -3rem;

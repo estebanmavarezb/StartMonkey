@@ -2,6 +2,13 @@ body {
   margin: 0;
 }
 
+
+.contenedor {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* SECOND SECTION */
 
 .mazeball-hero {
@@ -29,16 +36,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 9rem;
-  width: 100%;
   align-items: center;
+  padding: 85px 0;
 }
 
 .head-text {
   display: flex;
   flex-direction: column;
   width: 70%;
-  padding: 2rem;
 }
 
 .head-text h2 {
@@ -56,7 +61,7 @@ body {
 }
 
 .mz-image img {
-  max-width: 75%;
+  width: 75%;
   height: auto;
 }
 
@@ -107,7 +112,7 @@ iframe {
 .game-headline {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem .5rem;
   width: 70%;
 }
 
@@ -225,7 +230,7 @@ iframe {
   }
 
   .mazeball-extreme {
-    padding: 3rem;
+    
   }
   .head-text h2 {
     font-size: 5rem;
@@ -241,8 +246,8 @@ iframe {
   }
 
   .mz-image img {
-    max-width: 100%;
-    height: 219px;
+    width: 125%;
+    height: auto;
   }
 
   .gameplay-section {
@@ -260,7 +265,7 @@ iframe {
     background-position: center center;
     height: 100vh;
     top: -10rem;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .game-headline h2 {
@@ -283,8 +288,9 @@ iframe {
   }
 
   .game-image img {
-      max-width: 100%;
-      height: 272px;
+      max-width: 1200px;
+      width: 125%;
+      height: 340px;
   }
 
   .update-container {
