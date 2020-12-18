@@ -1,6 +1,6 @@
 //Object that contains the strings of the HTML
 const dom = {
-    mazeballPath: window.location.pathname.split('/')[1].replace('.html', ''),
+    socialtoonsPath: window.location.pathname.split('/')[1].replace('.html', ''),
     active: 'active',
     bars: '.bars',
     navList: '.nav-list',
@@ -8,10 +8,14 @@ const dom = {
     navListActive: 'nav-list_active',
     appstore: '.appstore',
     playstore: '.playstore',
-    mzImg: '.mz-image',
+    tsImg: '.ts-image',
     video: '.video',
-    phones(num) {return `.phone-${num}`}
+    forestSlider: '.cellphone',
+    topito: '.topito',
+    ghost: '.ghost',
+    robot: '.robot'
 }
+console.log(dom.socialtoonsPath)
 //Object that contains style properties from css
 const styles = {
     none(elem){ return elem.style.display = 'none' },
@@ -29,8 +33,7 @@ const Scroll = (elem, time = 0) => ScrollReveal().reveal(elem, {delay: time});
 //Active the class if the conditional is true
 const gamesLi = sE(`${dom.navList} #games`);
 
-(dom.mazeballPath === 'mazeball') ? styles.toggle(gamesLi.children[0], dom.active) : null;
-
+(dom.socialtoonsPath === 'socialtoons') ? styles.toggle(gamesLi.children[0], dom.active) : null;
 window.onload = () => {
 
     const bars = sE(dom.bars);
@@ -56,9 +59,9 @@ window.onload = () => {
 //ScrollReveal
 Scroll(dom.appstore, 200);
 Scroll(dom.playstore, 200);
-Scroll(dom.mzImg, 400);
+Scroll(dom.tsImg, 400);
 Scroll(dom.video, 300);
-Scroll(dom.phones(1), 200);
-Scroll(dom.phones(2), 350);
-Scroll(dom.phones(3), 450);
-Scroll(dom.phones(4), 20);
+Scroll(dom.forestSlider);
+Scroll(dom.topito, 200);
+Scroll(dom.robot, 400);
+Scroll(dom.ghost, 200);

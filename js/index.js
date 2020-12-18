@@ -1,6 +1,6 @@
 //Object that contains the strings of the HTML
 const dom = {
-    homePath: window.location.pathname.replace('/','').replace('/','').toLowerCase(),
+    homePath: window.location.pathname.split('/')[1].replace('.html', ''),
     active: 'active',
     bars: '.bars',
     navList: '.nav-list',
@@ -20,7 +20,7 @@ const dom = {
     yellow: '.puzzle-y',
     inputForm: '.input-form'
 }
-console.log(dom.homePath)
+
 //Object that contains style properties from css
 const styles = {
     none(elem){ return elem.style.display = 'none' },
@@ -41,19 +41,6 @@ const sE = elem => document.querySelector(elem);
 //Function that returns a ScrollReveal object
 const Scroll = (elem, time = 0) => ScrollReveal().reveal(elem, {delay: time});
 
-//Function fetch the data
-// const PHPfetch = async (e) => {
-//     e.preventDefault();
-//     const getPHP = await fetch('result.php', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type':'application/json'
-//         },
-//         body: JSON.stringify(inputValues)
-//     });
-//     console.log(getPHP)
-// }
-
 window.onload = () => {
 
     const bars = sE(dom.bars);
@@ -62,7 +49,7 @@ window.onload = () => {
     const inputForm = document.querySelectorAll(dom.inputForm);
     const homeLi = sE(`${dom.navList} #home`);
 
-    (dom.homePath === 'startmonkey') ? styles.toggle(homeLi.children[0], dom.active) : null;
+    (dom.homePath === 'index') ? styles.toggle(homeLi.children[0], dom.active) : null;
 
     //Event to open the menu
     bars.onclick = () => {
