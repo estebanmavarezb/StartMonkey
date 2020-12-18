@@ -19,7 +19,8 @@ p {
     display: flex;
     flex-direction: row;
     position: relative;
-    width: 100%;
+    width: 50%;
+    left: 400px;
     bottom: 5rem;
     align-items: flex-end;
     justify-content: space-evenly;
@@ -71,6 +72,7 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        left: 0;
         top: 140px;
         width: 30%;
         margin: 0 auto;
@@ -201,11 +203,12 @@ p {
 }
 
 .online-image .topito{
-    width: 25%;
-    height: 77%;
+    width: 500px;
+    height: 800px;
     z-index: 4;
     position: absolute;
-    right: 12rem;
+    top: 380px;
+    right: 41px;
 }
 
 .image2-section {
@@ -297,8 +300,8 @@ p {
     }
 
     .online-image .topito {
-        width: 25%;
-        height: 25%;
+        width: 100px;
+        height: 175px;
         right: 0rem;
         bottom: -68px;
     }
