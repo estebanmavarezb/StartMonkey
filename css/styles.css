@@ -215,6 +215,8 @@ i {
 }
 @media (min-width: 768px) {
 
+    
+
     .nav-bar {
         display: flex;
         flex-direction: row;
@@ -1467,8 +1469,12 @@ i {
 
   @media (max-width: 420px) {
 
+    .cambios.contenedor {
+        width: 100%;
+    }
+
     .first-row .text {
-        padding: 10rem 0rem 0rem 4rem;
+        padding: 10rem 0rem;
     }
 
     .text h3 {
@@ -1612,7 +1618,7 @@ i {
 
 @media (min-width: 375px) {
     .dona-1 {
-        top: 60rem;
+        top: 565px;
         right: 0;
         position: absolute;
         width: 9rem;
@@ -1779,7 +1785,7 @@ i {
 
     .puzzle-b-p {
         position: relative;
-        top: 198px;
+        top: 228px;
         right: 10rem;
         height: 0;
         display: -webkit-box;
@@ -1840,7 +1846,7 @@ i {
     .puzzle-y img:nth-child(2) {
         width: 15rem;
         position: absolute;
-        top: -430px;
+        top: -340px;
     }
 
     @media (min-width: 375px) {
@@ -2172,6 +2178,14 @@ i {
               align-items: center;
   }
 
+  .person h2 {
+      font-size: 20px;
+  }
+
+  .person p {
+      font-size: 14px;
+  }
+
   @media (min-width: 768px) {
       .creative-person {
         background-position: unset;
@@ -2261,7 +2275,8 @@ i {
       border-radius: 26px;
       padding: 2rem;
       margin: 2rem;
-      height: 50%;
+      height: 163px;
+      width: 246px;
   }
 
   .form-container .info h3 {
@@ -2384,7 +2399,7 @@ button {
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2;
-        width: 100%;
+        width: 246px;
     }
 
     form {
@@ -2445,6 +2460,21 @@ button {
     .form-section {
         top: -9rem;
     } 
+}
+
+@media (max-width: 400px) {
+    .form-section {
+        height: 75vh;
+    }
+
+    .form-container {
+        position: relative;
+        top: 120px;
+    }
+    .form-section h2 {
+        position: relative;
+        top: 90px;
+    }
 }
 
 

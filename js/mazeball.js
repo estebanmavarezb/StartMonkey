@@ -1,6 +1,6 @@
 //Object that contains the strings of the HTML
 const dom = {
-    mazeballPath: window.location.pathname.split('/')[1].replace('.html', ''),
+    mazeballPath: window.location.pathname,
     active: 'active',
     bars: '.bars',
     navList: '.nav-list',
@@ -29,7 +29,7 @@ const Scroll = (elem, time = 0) => ScrollReveal().reveal(elem, {delay: time});
 //Active the class if the conditional is true
 const gamesLi = sE(`${dom.navList} #games`);
 
-(dom.mazeballPath === 'mazeball') ? styles.toggle(gamesLi.children[0], dom.active) : null;
+(dom.mazeballPath.includes('mazeball')) ? styles.toggle(gamesLi.children[0], dom.active) : null;
 
 window.onload = () => {
 

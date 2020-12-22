@@ -1,6 +1,6 @@
 //Object that contains the strings of the HTML
 const dom = {
-    hedgehogPath: window.location.pathname.split('/')[1].replace('.html', ''),
+    hedgehogPath: window.location.pathname,
     active: 'active',
     bars: '.bars',
     navList: '.nav-list',
@@ -32,7 +32,7 @@ const Scroll = (elem, time = 0) => ScrollReveal().reveal(elem, {delay: time});
 
 //Active the class if the conditional is true
 const gamesLi = sE(`${dom.navList} #games`);
-(dom.hedgehogPath === 'hedgehog') ? styles.toggle(gamesLi.children[0], dom.active) : null;
+(dom.hedgehogPath.includes('hedgehog') ) ? styles.toggle(gamesLi.children[0], dom.active) : null;
 
 window.onload = () => {
 

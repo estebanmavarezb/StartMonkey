@@ -1,6 +1,6 @@
 //Object that contains the strings of the HTML
 const dom = {
-    socialtoonsPath: window.location.pathname.split('/')[1].replace('.html', ''),
+    socialtoonsPath: window.location.pathname,
     active: 'active',
     bars: '.bars',
     navList: '.nav-list',
@@ -33,7 +33,7 @@ const Scroll = (elem, time = 0) => ScrollReveal().reveal(elem, {delay: time});
 //Active the class if the conditional is true
 const gamesLi = sE(`${dom.navList} #games`);
 
-(dom.socialtoonsPath === 'socialtoons') ? styles.toggle(gamesLi.children[0], dom.active) : null;
+(dom.socialtoonsPath.includes('socialtoons')) ? styles.toggle(gamesLi.children[0], dom.active) : null;
 window.onload = () => {
 
     const bars = sE(dom.bars);

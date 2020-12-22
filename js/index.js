@@ -1,6 +1,6 @@
 //Object that contains the strings of the HTML
 const dom = {
-    homePath: window.location.pathname.split('/')[1].replace('.html', ''),
+    homePath: window.location.pathname,
     active: 'active',
     bars: '.bars',
     navList: '.nav-list',
@@ -20,6 +20,7 @@ const dom = {
     yellow: '.puzzle-y',
     inputForm: '.input-form'
 }
+
 
 //Object that contains style properties from css
 const styles = {
@@ -49,7 +50,7 @@ window.onload = () => {
     const inputForm = document.querySelectorAll(dom.inputForm);
     const homeLi = sE(`${dom.navList} #home`);
 
-    (dom.homePath === 'index') ? styles.toggle(homeLi.children[0], dom.active) : null;
+    (dom.homePath.includes('index')) ? styles.toggle(homeLi.children[0], dom.active) : null;
 
     //Event to open the menu
     bars.onclick = () => {
